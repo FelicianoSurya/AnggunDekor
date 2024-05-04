@@ -1,0 +1,91 @@
+.slide-1{
+    height: 100vh;
+    background-image: url(../Images/banner/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.absolute{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+    top:0;
+    left: 0;
+}
+
+.content-3 .absolute:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.absolute-text{
+    position: absolute;
+    bottom:0;
+    left:20px;
+    font-size: 20px;
+    color: #F9F9F9;
+    opacity: 0.8;
+    z-index: 1000;
+}
+
+.content-banner{
+    padding: 15em 10em 20em 15em;
+    z-index: 1000;
+    position: relative;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    width: 10%;
+}
+
+.hr-border{
+    border:1px solid white;
+}
+
+.text-design{
+    font-size: 35px;
+}
+
+.carousel-inner p{
+    color:#F9F9F9;
+    opacity: 0.8;
+}
+
+.company-name{
+    font-size: 3.5em;
+    letter-spacing: 1px;
+}
+
+.btn-product{
+    border:1px solid white;
+    margin-top: 25px;
+}
+
+.content-2 .text-design{
+    font-size: 20px;
+}
+
+.content-2 .hr-border{
+    border:1px solid black;
+    width: 15%;
+}
+
+.content-2 p{
+    color: black;
+}
+
+.content-2-topic{
+    font-size: 40px;
+}
+
+.content-3-box{
+    border-top: 2px solid black;
+}
+
+.box-image-content-3{
+    position: relative;
+}

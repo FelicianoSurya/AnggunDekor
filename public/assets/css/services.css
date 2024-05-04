@@ -1,0 +1,135 @@
+.slide-1{
+    height: 80vh;
+    background-image: url(../Images/banner/banner_service.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.banner{
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.absolute{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+    top:0;
+    left: 0;
+}
+
+.content-3 .absolute:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.absolute-text{
+    position: absolute;
+    bottom:0;
+    left:20px;
+    font-size: 20px;
+    color: #F9F9F9;
+    opacity: 0.8;
+    z-index: 1000;
+}
+
+.content-banner{
+    padding-top: 4em;
+    z-index: 1000;
+    position: relative;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    width: 10%;
+}
+
+.hr-border{
+    border:1px solid white;
+}
+
+.text-design{
+    font-size: 40px;
+}
+
+.carousel-inner p{
+    color:#F9F9F9;
+    opacity: 0.8;
+}
+
+.box-service{
+    background-color:#F9F9F9;
+    opacity: 0.8;
+    border-radius: 10px;
+    padding: 30px 30px;
+}
+
+.text{
+    color:black !important;
+    opacity: 1 !important;
+}
+.image-service{
+    height: 80px;
+}
+
+.consultation{
+    position: absolute;
+    background-color: #E00000;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+    padding:20px;
+    border-radius: 20px;
+}
+
+.consultation p{
+    color:white;
+}
+
+.btn-appointment{
+    font-size: 10px;
+    width: 200px;
+    border-radius: 50px;
+    background-color: #F9F9F9;
+    opacity: 0.8;
+    color:black;
+}
+
+.cons-left{
+    border-right: 2px solid white;
+}
+
+.opacity{
+    opacity: 0.8;
+}
+
+.content-2 .topic{
+    font-size: 40px;
+}
+
+.circle-big{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.circle-small{
+    position: absolute;
+    background-color: #E00000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    top: -10px;
+}
+
+.content-2 .circle-big p{
+    font-size: 13px;
+}

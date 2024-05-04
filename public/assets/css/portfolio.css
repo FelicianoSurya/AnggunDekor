@@ -1,0 +1,61 @@
+.box-image-content-3{
+    position: relative;
+}
+
+.content-3 .absolute:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.text-topic{
+    font-size: 40px;
+}
+
+.absolute{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+    top:0;
+    left: 0;
+}
+
+.absolute-text{
+    position: absolute;
+    bottom:0;
+    left:20px;
+    font-size: 20px;
+    color: #F9F9F9;
+    opacity: 0.8;
+    z-index: 1000;
+}
+
+.consultation{
+    background-color: #E00000;
+    z-index: 1001;
+    padding:20px;
+    border-radius: 20px;
+}
+
+.consultation p{
+    color:white;
+}
+
+.btn-appointment{
+    font-size: 10px;
+    width: 200px;
+    border-radius: 50px;
+    background-color: #F9F9F9;
+    opacity: 0.8;
+    color:black;
+}
+
+.cons-left{
+    border-right: 2px solid white;
+}
+
+.opacity{
+    opacity: 0.8;
+}

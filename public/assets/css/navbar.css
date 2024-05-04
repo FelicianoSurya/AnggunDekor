@@ -1,0 +1,54 @@
+@font-face {
+    font-family: poppins;
+    src: url('../fonts/Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url('../fonts/Poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: poppins-semibold;
+    src: url('../fonts/Poppins/Poppins-SemiBold.ttf');
+}
+
+.poppins{
+    font-family: 'poppins';
+}
+
+.poppins-bold {
+    font-family: 'poppins-bold';
+}
+
+.poppins-semibold {
+    font-family: 'poppins-semibold';
+}
+
+.navbar{
+    background-color: #E00000;
+    padding:20px;
+}
+
+.logo-text{
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 20px;
+    color:white;
+    opacity: 0.8;
+}
+
+a:hover{
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.navbar ul a li{
+    list-style-type: none;
+    padding:0px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: poppins-semibold;
+    color:white;
+    opacity: 0.8;
+}

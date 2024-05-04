@@ -1,0 +1,18 @@
+.desc-product p{
+    font-size: 15px;
+}
+
+.btn-whatsapp{
+    background-color: #0DBC1E;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.box-button-whatsapp p{
+    font-size: 20px;
+    color:white;
+}
+
+.btn-whatsapp:hover{
+    box-shadow: none;
+    opacity: 0.8;
+}

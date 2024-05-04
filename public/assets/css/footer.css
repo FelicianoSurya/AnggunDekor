@@ -1,0 +1,19 @@
+*{
+    font-family:poppins-semibold;
+}
+
+.footer{
+    background-color: #E00000;
+    margin-top: 20px;
+}
+
+footer p{
+    font-size: 18px ;
+    margin:0;
+    opacity: 0.8;;
+    color: white;
+}
+
+.footer a{
+    color:white;
+}
