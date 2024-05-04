@@ -1,0 +1,48 @@
+.box-image-content-3{
+    position: relative;
+}
+
+.content-3 .absolute:hover{
+    cursor: pointer;
+}
+
+.box-image-content-3:hover .bottom-absolute {
+    opacity: 0.9;
+}
+
+.text-topic{
+    font-size: 40px;
+}
+
+.absolute{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+    top:0;
+    left: 0;
+}
+
+.absolute-text{
+    font-size: 20px;
+    color: #F9F9F9;
+    opacity: 0.8;
+    z-index: 1000;
+    margin: 0;
+}
+
+.bottom-absolute {
+    position: absolute; /* Position the element absolutely within the .content-3 div */
+    bottom: 0; /* Align it to the bottom */
+    left: 0; /* Align it to the left */
+    width: 100%; /* Full width */
+    background-color: black; /* Black background */
+    opacity: 0; /* Initially hide the black box */
+    z-index: 1001;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  

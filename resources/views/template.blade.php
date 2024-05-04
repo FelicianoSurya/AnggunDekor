@@ -11,6 +11,6 @@
 </div>
 @endsection
 
-@section('custom-css')
+@section('custom-js')
 
 @endsection

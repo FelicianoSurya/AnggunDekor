@@ -40,3 +40,7 @@ Route::get('contact-us', function() {
 Route::get('/products/floor/floor1', function() {
     return view('Page.detail-product');
 });
+
+Route::get('/products/floor', function() {
+    return view('Page.sub-product');
+});
