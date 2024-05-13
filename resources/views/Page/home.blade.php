@@ -35,7 +35,7 @@
                 <div class="absolute"></div>
             </div> -->
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" style="z-index:1000">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
@@ -76,34 +76,15 @@
 <div class="content-3">
     <div class="container content-3-box">
         <div class="row mt-4">
+            @foreach($productType as $product)
             <div class="col-6 p-3">
-                <div class="box-image-content-3">
+                <a href="/products/floor"><div class="box-image-content-3">
                     <div class="absolute"></div>
-                    <p class="absolute-text">Living Room</p>
-                    <img src="{{ asset('assets/Images/Home/interior-5.png') }}" alt="inter-5" class="w-100"> 
-                </div>
+                    <p class="absolute-text">{{ $product->name }}</p>
+                    <img src="{{ asset('storage/Images/ProductType') . '/' . $product['image_path'] }}" alt="inter-5" class="w-100" height="200"> 
+                </div></a>
             </div>
-            <div class="col-6 p-3">
-                <div class="box-image-content-3">
-                    <div class="absolute"></div>
-                    <p class="absolute-text">Office</p>
-                    <img src="{{ asset('assets/Images/Home/interior-6.png') }}" alt="inter-6" class="w-100">    
-                </div>
-            </div>
-            <div class="col-6 p-3">
-                <div class="box-image-content-3">
-                    <div class="absolute"></div>
-                    <p class="absolute-text">Bed Room</p>
-                    <img src="{{ asset('assets/Images/Home/interior-7.png') }}" alt="inter-7" class="w-100">    
-                </div>
-            </div>
-            <div class="col-6 p-3">
-                <div class="box-image-content-3">
-                    <div class="absolute"></div>
-                    <p class="absolute-text">Store</p>
-                    <img src="{{ asset('assets/Images/Home/interior-8.png') }}" alt="inter-8" class="w-100">    
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </div>

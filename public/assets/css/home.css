@@ -88,4 +88,5 @@
 
 .box-image-content-3{
     position: relative;
+    min-height: 200px;
 }
