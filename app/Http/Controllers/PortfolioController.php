@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Portfolio;
 use App\Models\PortfolioType;
+use App\Models\PortfolioImage;
 use Illuminate\Support\Facades\Validator;
 
 class PortfolioController extends Controller
@@ -212,6 +213,97 @@ class PortfolioController extends Controller
 
     public function destroyPortfolio($id, Request $request){
         $data = Portfolio::find($id);
+
+        if($data){
+            $data->delete();
+            $request->session()->flash('status', 'delete');
+            return back();
+        }else{
+            return response([
+                'message' => 'Data tidak ada!'
+            ]);
+        }
+    }
+
+    // Image Portfolio
+
+    public function indexImage($id){
+        $portfolio = Portfolio::find($id);
+        $data = PortfolioImage::where('portfolio_id', $id)->with('portfolio')->get();
+        return view('Admin.portfolioImage', [
+            'portfolio' => $portfolio,
+            'data' => $data
+        ]);
+    }
+
+    public function formImage($id) {
+        $portfolio = Portfolio::find($id);
+        return view('Admin.PortfolioImage.add',[
+            'portfolio' => $portfolio
+        ]);
+    }
+
+    public function editImageForm($portfolio_id, $id){
+        $data = Portfolio::find($portfolio_id);
+        $image = PortfolioImage::find($id);
+        return view('Admin.PortfolioImage.edit',[
+            'data' => $data,
+            'image' => $image,
+        ]);
+    }
+
+    public function storeImage(Request $request) {
+        $validate = Validator::make($request->all(),[
+            'image' => 'required|mimes:jpeg,jpg,png,gif|max:2048'
+        ]);
+
+        if($validate->fails()){
+            return back()->withErrors($validate);
+        }
+        
+        if($request->hasFile('image')){
+            $destination_path = 'public/Images/Portfolio/' . $request->portfolio_name;
+            $image = $request->file('image');
+            $image_name = $image->getClientOriginalName();
+            $path = $request->file('image')->storeAs($destination_path, $image_name);
+        }
+
+        PortfolioImage::create([
+            'image_path' => $image_name,
+            'portfolio_id' => $request->portfolio_id,
+        ]);
+
+        return redirect('/admin/portfolio/images/' . $request->portfolio_id)->with(['success' => 'success']);
+    }
+
+    public function editImage(Request $request){
+        $validate = Validator::make($request->all(),[
+            'image' => 'required|mimes:jpeg,jpg,png,gif|max:2048'
+        ]);
+
+        if($validate->fails()){
+            return back()->withErrors($validate);
+        }
+        
+        if($request->hasFile('image')){
+            $destination_path = 'public/Images/Portfolio/' . $request->portfolio_name;
+            $image = $request->file('image');
+            $image_name = $image->getClientOriginalName();
+            $path = $request->file('image')->storeAs($destination_path, $image_name);
+        }
+
+        $data = PortfolioImage::find($request->image_id);
+
+        $data->fill([
+            'image_path' => $image_name
+        ]);
+
+        $data->save();
+        return redirect('/admin/portfolio/images' . '/' . $request->portfolio_id)->with(['info' => 'edit']);
+    }
+
+    public function destroyImage($portfolio_id, $id, Request $request){
+        $data = PortfolioImage::find($id);
 
         if($data){
             $data->delete();

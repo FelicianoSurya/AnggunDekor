@@ -35,6 +35,7 @@
                 <td class="d-flex justify-content-around">
                     <a href="{{ url('/admin/portfolio/edit') . '/' . $data['id'] }}"><img src="{{ asset('assets/Images/Icon/edit.png') }}" width="30" alt="edit"></a>
                     <a href="{{ url('/admin/portfolio/delete') . '/' . $data['id'] }}"><img src="{{ asset('assets/Images/Icon/delete.png') }}" width="30" alt="delete"></a>
+                    <a class="btn btn-danger" href="{{ url('/admin/portfolio/images') . '/' . $data['id'] }}"><p class="m-0">add Image</p></a>
                 </td>
             </tr>
             @endforeach

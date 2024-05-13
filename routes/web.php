@@ -66,6 +66,8 @@ Route::group(['prefix' => 'admin', 'as' => 'admin'], function() {
             Route::get('/edit/{id}', [PortfolioController::class, 'editPortfolioForm']);
             Route::post('/edit', [PortfolioController::class, 'editPortfolio']);
             Route::get('/delete/{id}', [PortfolioController::class, 'destroyPortfolio']);
+
+            Route::get('/images/{id}', [PortfolioController::class, 'indexImage']);
         });
 
         Route::group(['prefix' => 'products', 'as' => 'portfolio'], function() {
@@ -95,6 +97,15 @@ Route::group(['prefix' => 'admin', 'as' => 'admin'], function() {
             Route::post('/edit', [ProductController::class, 'editImage']);
             Route::get('/delete/{product_id}/{id}', [ProductController::class, 'destroyImage']);
             Route::get('/active/{product_id}/{id}', [ProductController::class, 'active']);
+        });
+
+        Route::group(['prefix' => 'PortfolioImage', 'as' => 'portfolioImage'], function() {
+            Route::get('{portfolio_id}/add', [PortfolioController::class, 'formImage']);
+            Route::post('{portfolio_id}/add', [PortfolioController::class, 'storeImage']);
+            Route::get('/edit/{portfolio_id}/{id}', [PortfolioController::class, 'editImageForm']);
+            Route::post('/edit', [PortfolioController::class, 'editImage']);
+            Route::get('/delete/{portfolio_id}/{id}', [PortfolioController::class, 'destroyImage']);
+            Route::get('/active/{portfolio_id}/{id}', [PortfolioController::class, 'active']);
         });
 
     });
