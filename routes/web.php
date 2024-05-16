@@ -16,35 +16,23 @@ use App\Http\Controllers\UserController;
 |
 */
 
+Route::get('/{$page}', [UserController::class, 'show'])->where('page', '.*');
+
 Route::get('/', [UserController::class, 'index']);
 
-Route::get('/products', function () {
-    return view('Page.product');
-});
+Route::get('/products', [UserController::class, 'products']);
 
-Route::get('/services', function() {
-    return view('Page.services');
-});
+Route::get('/products/{id}', [UserController::class, 'subProducts']);
 
-Route::get('/portfolio', function() {
-    return view('Page.portfolio');
-});
+Route::get('/products/{typeId}/{id}', [UserController::class, 'detailProduct']);
 
-Route::get('/portfolio/floor', function() {
-    return view("Page.detail-portfolio");
-});
+Route::get('/portfolio', [UserController::class, 'portfolio']);
 
-Route::get('contact-us', function() {
-    return view('Page.contact');
-});
+Route::get('/portfolio/{id}', [UserController::class, 'subPortfolio']);
 
-Route::get('/products/floor/floor1', function() {
-    return view('Page.detail-product');
-});
+Route::get('/services', [UserController::class, 'services']);
 
-Route::get('/products/floor', function() {
-    return view('Page.sub-product');
-});
+Route::get('contact-us', [UserController::class, 'contactUs']);
 
 Route::group(['prefix' => 'admin', 'as' => 'admin'], function() {
     Route::group(['middleware' => ['auth:sanctum', 'verified']], function(){

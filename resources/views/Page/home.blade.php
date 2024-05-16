@@ -24,7 +24,7 @@
                     <div class="mt-5">
                         <p class="company-name poppins-bold">Anggun Dekor</p>
                         <p class="poppins">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora accusantium pariatur aliquam ut accusamus quis atque dolores, itaque in rem recusandae animi quas totam quaerat ab enim nulla delectus facere.</p>
-                        <button class="btn btn-lg btn-danger px-5 btn-product">Products</button>
+                        <a href="/products"><button class="btn btn-lg btn-danger px-5 btn-product">Products</button></a>
                     </div>
                 </div>
             </div>
@@ -81,7 +81,7 @@
                 <a href="/products/floor"><div class="box-image-content-3">
                     <div class="absolute"></div>
                     <p class="absolute-text">{{ $product->name }}</p>
-                    <img src="{{ asset('storage/Images/ProductType') . '/' . $product['image_path'] }}" alt="inter-5" class="w-100" height="200"> 
+                    <img src="{{ asset('storage/Images/ProductType') . '/' . $product['image_path'] }}" alt="inter-5" class="w-100" height="250"> 
                 </div></a>
             </div>
             @endforeach

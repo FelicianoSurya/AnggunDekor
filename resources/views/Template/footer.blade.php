@@ -3,16 +3,16 @@
         <div>
             <p>Products</p>
             <ul>
-                <a href=""><li>Curtain</li></a>
-                <a href=""><li>Laminates</li></a>
-                <a href=""><li>Wallpaper</li></a>
+                @foreach($productType as $product)
+                <a href="{{ url('/products') . '/' . $product->id }}"><li>{{ $product->name }}</li></a>
+                @endforeach
             </ul>
         </div>
         <div>
-            <a href=""><p>Service</p></a>
+            <a href="/services"><p>Service</p></a>
         </div>
         <div>
-            <a href=""><p>Portfolio</p></a>
+            <a href="/portfolio"><p>Portfolio</p></a>
         </div>
         <div>
             <p>Contact us</p>

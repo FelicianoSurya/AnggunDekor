@@ -301,13 +301,15 @@ class ProductController extends Controller
     public function active($product_id, $id){
         $data = ProductImage::find($id);
 
-        $data_old = ProductImage::where('active_image', 1)->first();
+        $data_old = ProductImage::where('product_id', $product_id)->get();
 
-        if($data_old !== null) {
-            $data_old->fill([
+        $data_remove = $data_old->where('active_image', 1)->first();
+
+        if($data_remove !== null) {
+            $data_remove->fill([
                 'active_image' => 0
             ]);
-            $data_old->save();
+            $data_remove->save();
         }
 
         $data->fill([

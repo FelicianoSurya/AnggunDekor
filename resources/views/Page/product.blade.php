@@ -10,48 +10,17 @@
     <div class="container content-3-box d-flex justify-content-center flex-column align-items-center">
         <p class="mt-5 text-topic m-0">Our Product</p>
         <div class="row mt-1">
+            @foreach($productType as $type)
+
             <div class="col-6 p-3">
-                <div class="box-image-content-3">
+                <a href="{{ url('/products') . '/' . $type['id'] }}"><div class="box-image-content-3">
                     <div class="absolute"></div>
-                    <p class="absolute-text">Floor</p>
-                    <img src="{{ asset('assets/Images/Product/image-1.png') }}" alt="image-1" class="w-100"> 
-                </div>
+                    <p class="absolute-text">{{ $type->name }}</p>
+                    <img src="{{ asset('storage/Images/ProductType') . '/' . $type['image_path'] }}" alt="image-1" class="w-100" height="250"> 
+                </div></a>
             </div>
-            <div class="col-6 p-3">
-                <div class="box-image-content-3">
-                    <div class="absolute"></div>
-                    <p class="absolute-text">Window</p>
-                    <img src="{{ asset('assets/Images/Product/image-2.png') }}" alt="image-6" class="w-100">    
-                </div>
-            </div>
-            <div class="col-6 p-3">
-                <div class="box-image-content-3">
-                    <div class="absolute"></div>
-                    <p class="absolute-text">Sofa</p>
-                    <img src="{{ asset('assets/Images/Product/image-3.png') }}" alt="image-7" class="w-100">    
-                </div>
-            </div>
-            <div class="col-6 p-3">
-                <div class="box-image-content-3">
-                    <div class="absolute"></div>
-                    <p class="absolute-text">Interior</p>
-                    <img src="{{ asset('assets/Images/Product/image-4.png') }}" alt="image-8" class="w-100">    
-                </div>
-            </div>
-            <div class="col-6 p-3">
-                <div class="box-image-content-3">
-                    <div class="absolute"></div>
-                    <p class="absolute-text">Table</p>
-                    <img src="{{ asset('assets/Images/Product/image-5.png') }}" alt="image-9" class="w-100">    
-                </div>
-            </div>
-            <div class="col-6 p-3">
-                <div class="box-image-content-3">
-                    <div class="absolute"></div>
-                    <p class="absolute-text">Interior</p>
-                    <img src="{{ asset('assets/Images/Product/image-6.png') }}" alt="image-10" class="w-100">    
-                </div>
-            </div>
+
+            @endforeach
         </div>
     </div>
 </div>

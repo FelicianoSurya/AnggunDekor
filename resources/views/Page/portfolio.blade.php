@@ -11,48 +11,15 @@
         <p class="mt-5 text-topic m-0">Portfolio</p>
         <p class="m-0">Looking to elevate your space with elegance? Whether you desire a chic pair of curtains, a stylish roman blind, a sophisticated pelmet, or a complete room or house transformation, we've got you covered. Our vast selection of designer fabrics, exquisite trimmings, luxurious wallpapers, and premium accessories sourced from top suppliers in the industry ensures that we can bring your vision to life. Take a glimpse at some of our recent projects spanning residential, hotel, and restaurant designs.</p>
         <div class="row mt-1">
+            @foreach($portfolio as $data)
             <div class="col-6 p-3">
-                <div class="box-image-content-3">
+                <a href="{{ url('/portfolio') . '/' . $data->id }}"><div class="box-image-content-3">
                     <div class="absolute"></div>
-                    <p class="absolute-text">Floor</p>
-                    <img src="{{ asset('assets/Images/Product/image-1.png') }}" alt="image-1" class="w-100"> 
-                </div>
+                    <p class="absolute-text">{{ $data->name }}</p>
+                    <img src="{{ asset('storage/Images/Portfolio') . '/' . $data['image_path'] }}" alt="image-1" class="w-100" height="400"> 
+                </div></a>
             </div>
-            <div class="col-6 p-3">
-                <div class="box-image-content-3">
-                    <div class="absolute"></div>
-                    <p class="absolute-text">Window</p>
-                    <img src="{{ asset('assets/Images/Product/image-2.png') }}" alt="image-6" class="w-100">    
-                </div>
-            </div>
-            <div class="col-6 p-3">
-                <div class="box-image-content-3">
-                    <div class="absolute"></div>
-                    <p class="absolute-text">Sofa</p>
-                    <img src="{{ asset('assets/Images/Product/image-3.png') }}" alt="image-7" class="w-100">    
-                </div>
-            </div>
-            <div class="col-6 p-3">
-                <div class="box-image-content-3">
-                    <div class="absolute"></div>
-                    <p class="absolute-text">Interior</p>
-                    <img src="{{ asset('assets/Images/Product/image-4.png') }}" alt="image-8" class="w-100">    
-                </div>
-            </div>
-            <div class="col-6 p-3">
-                <div class="box-image-content-3">
-                    <div class="absolute"></div>
-                    <p class="absolute-text">Table</p>
-                    <img src="{{ asset('assets/Images/Product/image-5.png') }}" alt="image-9" class="w-100">    
-                </div>
-            </div>
-            <div class="col-6 p-3">
-                <div class="box-image-content-3">
-                    <div class="absolute"></div>
-                    <p class="absolute-text">Interior</p>
-                    <img src="{{ asset('assets/Images/Product/image-6.png') }}" alt="image-10" class="w-100">    
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </div>

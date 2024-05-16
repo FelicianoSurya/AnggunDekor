@@ -8,44 +8,13 @@
 <!-- Codenya disini -->
 <div class="content-3">
     <div class="container content-3-box d-flex justify-content-center flex-column align-items-center">
-        <p class="mt-5 text-topic m-0">Floor</p>
+        <p class="mt-5 text-topic m-0">{{ $data->name }}</p>
         <div class="row mt-2">
+            @foreach($portfolio as $dat)
             <div class="col-3 p-1">
-                <img width="100%" class="popup-image" src="{{ asset('assets/Images/Portfolio/Rectangle 23.png') }}" alt="rect-23">
+                <img width="100%" class="popup-image" src="{{ asset('storage/Images/Portfolio') . '/' . $data->name . '/' . $dat['image_path'] }}" alt="rect-23" height="350">
             </div>
-            <div class="col-3 p-1">
-                <img width="100%" class="popup-image" src="{{ asset('assets/Images/Portfolio/Rectangle 24.png') }}" alt="rect-24">
-            </div>
-            <div class="col-3 p-1">
-                <img width="100%" class="popup-image" src="{{ asset('assets/Images/Portfolio/Rectangle 25.png') }}" alt="rect-25">
-            </div>
-            <div class="col-3 p-1">
-                <img width="100%" class="popup-image" src="{{ asset('assets/Images/Portfolio/Rectangle 26.png') }}" alt="rect-26">
-            </div>
-            <div class="col-3 p-1">
-                <img width="100%" class="popup-image" src="{{ asset('assets/Images/Portfolio/Rectangle 27.png') }}" alt="rect-27">
-            </div>
-            <div class="col-3 p-1">
-                <img width="100%" class="popup-image" src="{{ asset('assets/Images/Portfolio/Rectangle 28.png') }}" alt="rect-28">
-            </div>
-            <div class="col-3 p-1">
-                <img width="100%" class="popup-image" src="{{ asset('assets/Images/Portfolio/Rectangle 29.png') }}" alt="rect-29">
-            </div>
-            <div class="col-3 p-1">
-                <img width="100%" class="popup-image" src="{{ asset('assets/Images/Portfolio/Rectangle 30.png') }}" alt="rect-30">
-            </div>
-            <div class="col-3 p-1">
-                <img width="100%" class="popup-image" src="{{ asset('assets/Images/Portfolio/Rectangle 31.png') }}" alt="rect-31">
-            </div>
-            <div class="col-3 p-1">
-                <img width="100%" class="popup-image" src="{{ asset('assets/Images/Portfolio/Rectangle 32.png') }}" alt="rect-32">
-            </div>
-            <div class="col-3 p-1">
-                <img width="100%" class="popup-image" src="{{ asset('assets/Images/Portfolio/Rectangle 33.png') }}" alt="rect-33">
-            </div>
-            <div class="col-3 p-1">
-                <img width="100%" class="popup-image" src="{{ asset('assets/Images/Portfolio/Rectangle 34.png') }}" alt="rect-34">
-            </div>
+            @endforeach
         </div>
     </div>
 
@@ -53,7 +22,7 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document"> <!-- Use modal-dialog-scrollable for vertical scrolling -->
             <div class="modal-content">
             <div class="modal-body">
-                <img width="600" id="popupImage" class="img-fluid" src="" alt="Popup Image">
+                <img width="100%" id="popupImage" class="img-fluid" src="" alt="Popup Image">
             </div>
             </div>
         </div>
