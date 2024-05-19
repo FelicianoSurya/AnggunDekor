@@ -6,7 +6,7 @@
 
 @section('content')
 <!-- Codenya disini -->
-<div class="container-fluid banner p-0">
+<div class="container-fluid banner p-0 fade-in">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active slide-1">
@@ -69,7 +69,7 @@
             </div>
         </div>
     </div>
-    <div class="consultation">
+    <div class="consultation fade-in">
         <div class="d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center w-50 cons-left">
                 <img src="{{ asset('assets/Images/Services/wa.png') }}" alt="wa">
@@ -87,7 +87,7 @@
 </div>
 
 
-<div class="content-2">
+<div class="content-2" data-aos="fade-up">
     <div class="container d-flex flex-column align-items-center justify-content-center">
         <p class="topic poppins-semibold mt-4"><span style="color:#E00000">Process</span> We Follow</p>
         <div class="d-flex justify-content-around align-items-center">
@@ -119,6 +119,8 @@
 </div>
 @endsection
 
-@section('custom-css')
-
+@section('custom-js')
+<script>
+    AOS.init();
+</script>
 @endsection

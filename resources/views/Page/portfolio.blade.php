@@ -8,11 +8,11 @@
 <!-- Codenya disini -->
 <div class="content-3">
     <div class="container content-3-box d-flex justify-content-center flex-column align-items-center">
-        <p class="mt-5 text-topic m-0">Portfolio</p>
-        <p class="m-0">Looking to elevate your space with elegance? Whether you desire a chic pair of curtains, a stylish roman blind, a sophisticated pelmet, or a complete room or house transformation, we've got you covered. Our vast selection of designer fabrics, exquisite trimmings, luxurious wallpapers, and premium accessories sourced from top suppliers in the industry ensures that we can bring your vision to life. Take a glimpse at some of our recent projects spanning residential, hotel, and restaurant designs.</p>
+        <p class="mt-5 text-topic m-0" data-aos="fade-up">Portfolio</p>
+        <p class="m-0" data-aos="fade-up">Looking to elevate your space with elegance? Whether you desire a chic pair of curtains, a stylish roman blind, a sophisticated pelmet, or a complete room or house transformation, we've got you covered. Our vast selection of designer fabrics, exquisite trimmings, luxurious wallpapers, and premium accessories sourced from top suppliers in the industry ensures that we can bring your vision to life. Take a glimpse at some of our recent projects spanning residential, hotel, and restaurant designs.</p>
         <div class="row mt-1">
             @foreach($portfolio as $data)
-            <div class="col-6 p-3">
+            <div class="col-6 p-3" data-aos="fade-right">
                 <a href="{{ url('/portfolio') . '/' . $data->id }}"><div class="box-image-content-3">
                     <div class="absolute"></div>
                     <p class="absolute-text">{{ $data->name }}</p>
@@ -25,7 +25,7 @@
 </div>
 
 <div class="container d-flex justify-content-center my-4">
-    <div class="consultation">
+    <div class="consultation" data-aos="fade-up">
         <div class="d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center w-50 cons-left">
                 <img src="{{ asset('assets/Images/Services/wa.png') }}" alt="wa">
@@ -43,6 +43,8 @@
 </div>
 @endsection
 
-@section('custom-css')
-
+@section('custom-js')
+<script>
+    AOS.init();
+</script>
 @endsection

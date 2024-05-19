@@ -8,11 +8,11 @@
 <!-- Codenya disini -->
 <div class="content-3">
     <div class="container content-3-box d-flex justify-content-center flex-column align-items-center">
-        <p class="mt-5 text-topic m-0">Our Product</p>
-        <div class="row mt-1">
+        <p class="mt-5 text-topic m-0" data-aos="fade-up">Our Product</p>
+        <div class="row mt-1 fade-in">
             @foreach($productType as $type)
 
-            <div class="col-6 p-3">
+            <div class="col-6 p-3" data-aos="fade-right">
                 <a href="{{ url('/products') . '/' . $type['id'] }}"><div class="box-image-content-3">
                     <div class="absolute"></div>
                     <p class="absolute-text">{{ $type->name }}</p>
@@ -26,6 +26,8 @@
 </div>
 @endsection
 
-@section('custom-css')
-
+@section('custom-js')
+<script>
+    AOS.init();
+</script>
 @endsection

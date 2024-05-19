@@ -6,7 +6,7 @@
 
 @section('content')
 <!-- Codenya disini -->
-<div class="container-fluid banner p-0">
+<div class="container-fluid banner p-0" data-aos="fade-down">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <!-- <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -19,12 +19,12 @@
                 <div class="content-banner d-flex flex-column align-items-start justify-content-center w-50">
                     <div class="d-flex justify-content-start align-items-center w-100 mb-5">
                         <hr class="w-25 hr-border m-0">
-                        <p class="m-0 ml-3 text-design poppins-semibold">Design Interior</p>
+                        <p class="m-0 ml-3 text-design poppins-semibold" data-aos="fade-down">Design Interior</p>
                     </div>
                     <div class="mt-5">
-                        <p class="company-name poppins-bold">Anggun Dekor</p>
-                        <p class="poppins">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora accusantium pariatur aliquam ut accusamus quis atque dolores, itaque in rem recusandae animi quas totam quaerat ab enim nulla delectus facere.</p>
-                        <a href="/products"><button class="btn btn-lg btn-danger px-5 btn-product">Products</button></a>
+                        <p class="company-name poppins-bold" data-aos="fade-down">Anggun Dekor</p>
+                        <p class="poppins" data-aos="fade-down">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora accusantium pariatur aliquam ut accusamus quis atque dolores, itaque in rem recusandae animi quas totam quaerat ab enim nulla delectus facere.</p>
+                        <a href="/products" data-aos="fade-down"><button class="btn btn-lg btn-danger px-5 btn-product">Products</button></a>
                     </div>
                 </div>
             </div>
@@ -47,8 +47,8 @@
 </div>
 <div class="container content-2 py-5 px-0">
     <div class="d-flex">
-        <img src="{{ asset('assets/Images/furniture/interior.png') }}" alt="interior">
-        <div class="d-flex flex-column w-100 ml-5">
+        <img src="{{ asset('assets/Images/furniture/interior.png') }}" data-aos="fade-right" alt="interior">
+        <div class="d-flex flex-column w-100 ml-5" data-aos="fade-left">
             <div class="d-flex justify-content-start align-items-center w-100 mb-3">
                 <hr class="hr-border m-0">
                 <p class="m-0 ml-3 text-design poppins-semibold">Interior Ruangan</p>
@@ -77,7 +77,7 @@
     <div class="container content-3-box">
         <div class="row mt-4">
             @foreach($productType as $product)
-            <div class="col-6 p-3">
+            <div class="col-6 p-3" data-aos="fade-up">
                 <a href="/products/floor"><div class="box-image-content-3">
                     <div class="absolute"></div>
                     <p class="absolute-text">{{ $product->name }}</p>
@@ -90,6 +90,8 @@
 </div>
 @endsection
 
-@section('custom-css')
-
+@section('custom-js')
+<script>
+    AOS.init();
+</script>
 @endsection

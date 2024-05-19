@@ -8,10 +8,10 @@
 <!-- Codenya disini -->
 <div class="content-3">
     <div class="container content-3-box d-flex justify-content-center flex-column align-items-center">
-        <p class="mt-5 text-topic m-0">{{ $data->name }}</p>
+        <p class="mt-5 text-topic m-0" data-aos="fade-up">{{ $data->name }}</p>
         <div class="row mt-2">
             @foreach($portfolio as $dat)
-            <div class="col-3 p-1">
+            <div class="col-3 p-1" data-aos="fade-right">
                 <img width="100%" class="popup-image" src="{{ asset('storage/Images/Portfolio') . '/' . $data->name . '/' . $dat['image_path'] }}" alt="rect-23" height="350">
             </div>
             @endforeach
@@ -30,7 +30,7 @@
 </div>
 
 <div class="container d-flex justify-content-center my-4">
-    <div class="consultation">
+    <div class="consultation"data-aos="fade-down">
         <div class="d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center w-50 cons-left">
                 <img src="{{ asset('assets/Images/Services/wa.png') }}" alt="wa">
@@ -50,6 +50,7 @@
 
 @section('custom-js')
 <script>
+    AOS.init();
   $(document).ready(function() {
     $('.popup-image').click(function() {
       var imageUrl = $(this).attr('src');

@@ -8,9 +8,9 @@
 <!-- Codenya disini -->
 <div class="content-3">
 <div class="container content-3-box d-flex justify-content-center flex-column align-items-center">
-        <p class="mt-5 text-topic m-0">Contact Us</p>
+        <p class="mt-5 text-topic m-0"data-aos="fade-up">Contact Us</p>
         <div class="d-flex justify-content-between align-items-center mt-5 mb-3">
-            <div class="d-flex flex-column align-items-start justify-content-start w-50">
+            <div class="d-flex flex-column align-items-start justify-content-start w-50"data-aos="fade-right">
                 <p class="m-1">Our Office</p>
                 <div class="d-flex">
                     <img width="25" height="25" src="{{ asset('assets/Images/Icon/location.png') }}" alt="location">
@@ -27,13 +27,13 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div data-aos="fade-left">
                 <img src="{{ asset('assets/Images/maps.png') }}" alt="maps">
             </div>
         </div>
     </div>    
 </div>
-<div class="container d-flex justify-content-center my-4">
+<div class="container d-flex justify-content-center my-4" data-aos="fade-up">
     <div class="consultation">
         <div class="d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center w-50 cons-left">
@@ -53,5 +53,7 @@
 @endsection
 
 @section('custom-js')
-
+<script>
+    AOS.init();
+</script>
 @endsection
