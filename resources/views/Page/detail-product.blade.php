@@ -8,7 +8,7 @@
 <!-- Codenya disini -->
 <div class="content-3">
 <div class="container content-3-box d-flex justify-content-center flex-column align-items-center">
-        <div class="d-flex justify-content-between align-items-center mt-5 mb-3">
+        <div class="d-flex align-items-center mt-5 mb-3">
             <div class="d-flex flex-column align-items-start justify-content-start w-50 p-3">
                 <img src="{{ asset('storage/Images/Product') . '/' . $product->name . '/' . $product->productImage->image_path }}" alt="main-image" width="100%" class="mb-3 rounded">
                 <div class="row">
@@ -19,7 +19,7 @@
                     @endforeach
                 </div>
             </div>
-            <div class="d-flex flex-column desc-product">
+            <div class="d-flex flex-column desc-product w-50 pl-5">
                 <p class="poppins-bold" style="font-size:40px">{{ $product->name }}</p>
                 <p class="mt-3">Deskripsi Product : </p>
                 {{ strip_tags(str_replace('&nbsp;' , '' , $product->description)) }}
@@ -30,9 +30,9 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
-    </div>    
+    </div>
 </div>
 
 @endsection

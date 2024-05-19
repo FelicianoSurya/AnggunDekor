@@ -22,13 +22,15 @@
 </head>
 
 <body>
+    <a class="whatsappIcon" href=""><div class="whatsapp">
+        <img src="{{ asset('assets/Images/Icon/whatsapp.png') }}" alt="png" width="40">
+    </div></a>
     @include('template.header')
 
     @yield('content')
-
     @include('template.footer')
 
- 
+
 
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

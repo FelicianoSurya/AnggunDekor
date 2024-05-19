@@ -52,3 +52,18 @@ a:hover{
     color:white;
     opacity: 0.8;
 }
+
+.whatsappIcon{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: #43c410;
+    padding:20px;
+    border-radius: 50px;
+    z-index: 1020;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.whatsappIcon:hover{
+    opacity: 0.8;
+}
