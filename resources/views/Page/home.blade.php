@@ -81,7 +81,7 @@
                 <a href="/products/floor"><div class="box-image-content-3">
                     <div class="absolute"></div>
                     <p class="absolute-text">{{ $product->name }}</p>
-                    <img src="{{ asset('storage/Images/ProductType') . '/' . $product['image_path'] }}" alt="inter-5" class="w-100" height="250">
+                    <img src="{{ asset('storage/Images/ProductType') . '/' . $product['image_path'] }}" alt="inter-5" class="w-100" height="350">
                 </div></a>
             </div>
             @endforeach
