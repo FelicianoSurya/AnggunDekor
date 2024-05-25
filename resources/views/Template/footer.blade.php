@@ -15,8 +15,8 @@
             <a href="/portfolio"><p>Portfolio</p></a>
         </div>
         <div>
-            <p>Contact us</p>
-            <p>0888 - 8888 - 8888 (WA)</p>
+            <p>Hubungi Kami</p>
+            <p>0812 - 5320 - 2998 (WA)</p>
         </div>
     </footer>
 </div>
