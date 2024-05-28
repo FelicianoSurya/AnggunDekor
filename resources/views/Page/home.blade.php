@@ -78,7 +78,7 @@
         <div class="row mt-4">
             @foreach($productType as $product)
             <div class="col-6 p-3" data-aos="fade-up">
-                <a href="/products/floor"><div class="box-image-content-3">
+                <a href="{{ url('/products/' . $product['id']) }}"><div class="box-image-content-3">
                     <div class="absolute"></div>
                     <p class="absolute-text">{{ $product->name }}</p>
                     <img src="{{ asset('storage/Images/ProductType') . '/' . $product['image_path'] }}" alt="inter-5" class="w-100" height="350">

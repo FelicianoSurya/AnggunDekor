@@ -13,6 +13,11 @@
         </div>
         <div>
             <a href="/portfolio"><p>Portfolio</p></a>
+            <ul>
+                @foreach($portfolio as $portfolio)
+                <a href="{{ url('/portfolio') . '/' . $portfolio->id }}"><li>{{ $portfolio->name }}</li></a>
+                @endforeach
+            </ul>
         </div>
         <div>
             <p>Hubungi Kami</p>

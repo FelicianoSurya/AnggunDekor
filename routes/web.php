@@ -58,7 +58,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin'], function() {
             Route::get('/images/{id}', [PortfolioController::class, 'indexImage']);
         });
 
-        Route::group(['prefix' => 'products', 'as' => 'portfolio'], function() {
+        Route::group(['prefix' => 'products', 'as' => 'products'], function() {
             Route::get('/', [ProductController::class, 'index']);
             Route::get('/add', [ProductController::class, 'productForm']);
             Route::post('/add', [ProductController::class, 'storeProduct']);

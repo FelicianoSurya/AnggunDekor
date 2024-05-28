@@ -13,13 +13,15 @@ class UserController extends Controller
 {
     public function index(){
         return view('Page.home', [
-            'productType' => ProductType::all()
+            'productType' => ProductType::all(),
+            'portfolio' => Portfolio::all()
         ]);
     }
 
     public function products(){
         return view('Page.product', [
-            'productType' => ProductType::all()
+            'productType' => ProductType::all(),
+            'portfolio' => Portfolio::all()
         ]);
     }
 
@@ -29,7 +31,8 @@ class UserController extends Controller
         }])->get();
         return view('Page.sub-product', [
             'products' => $data,
-            'productType' => ProductType::all()
+            'productType' => ProductType::all(),
+            'portfolio' => Portfolio::all()
         ]);
     }
 
@@ -41,7 +44,8 @@ class UserController extends Controller
         }])->first();
         return view('Page.detail-product', [
             'product' => $data,
-            'productType' => ProductType::all()
+            'productType' => ProductType::all(),
+            'portfolio' => Portfolio::all()
         ]);
     }
 
@@ -49,7 +53,8 @@ class UserController extends Controller
         $data = Portfolio::all();
         return view('Page.portfolio', [
             'portfolio' => $data,
-            'productType' => ProductType::all()
+            'productType' => ProductType::all(),
+            'portfolio' => Portfolio::all()
         ]);
     }
 
@@ -60,19 +65,22 @@ class UserController extends Controller
         return view('Page.detail-portfolio', [
             'portfolio' => $data,
             'data' => $portfolio,
-            'productType' => ProductType::all()
+            'productType' => ProductType::all(),
+            'portfolio' => Portfolio::all()
         ]);
     }
 
     public function services(){
         return view('Page.services',[
-            'productType' => ProductType::all()
+            'productType' => ProductType::all(),
+            'portfolio' => Portfolio::all()
         ]);
     }
-    
+
     public function contactUs(){
         return view('Page.contact',[
-            'productType' => ProductType::all()
+            'productType' => ProductType::all(),
+            'portfolio' => Portfolio::all()
         ]);
     }
 }
