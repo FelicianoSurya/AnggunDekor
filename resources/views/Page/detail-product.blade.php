@@ -21,13 +21,14 @@
             </div>
             <div class="d-flex flex-column desc-product w-50 pl-5" data-aos="fade-left">
                 <p class="poppins-bold" style="font-size:40px">{{ $product->name }}</p>
-                <p class="mt-3">Deskripsi Product : </p>
-                {{ strip_tags(str_replace('&nbsp;' , '' , $product->description)) }}
+                <div>
+                    {!! $product->description !!}
+                </div>
                 <div class="d-flex justify-content-center mt-5">
-                    <div class="d-flex btn btn-lg btn-whatsapp justify-content-center align-items-center box-button-whatsapp">
+                    <a href="https://wa.me/6281253202998" target="_blank" class="d-flex"><div class="d-flex btn btn-lg btn-whatsapp justify-content-center align-items-center box-button-whatsapp">
                         <p class="m-0 mr-2">WhatsApp</p>
                         <img src="{{ asset('assets/Images/Icon/whatsapp.png') }}" alt="whatsapp" width="100%">
-                    </div>
+                    </dv></a>
                 </div>
             </div>
 

@@ -14,28 +14,40 @@
                 <img src="{{ asset('assets/Images/Icon/plus.png') }}" alt="plus" width="30">
             </a>
         </div>
-        <table class="table table-striped w-100">
-            <tr>
-                <th class="text-center">#Id</th>
-                <th class="text-center">Image</th>
-                <th class="text-center">Action</th>
-            </tr>
+        <table id="table" class="table table-striped w-100">
+            <thead>
+                <tr>
+                    <th class="text-center">#Id</th>
+                    <th class="text-center">Image</th>
+                    <th class="text-center">Action</th>
+                </tr>
+            </thead>
             @php $i = 0; @endphp
-            @foreach($data as $dat)
-            @php
-                $i++;
-            @endphp
-            <tr>
-                <td class="text-center">{{ $i }}</td>
-                <td><img src="{{ asset('storage/Images/Portfolio') . '/' . $portfolio->name . '/' . $dat['image_path'] }}" alt="" width="250" height="100%"></td>
-                <td class="d-flex justify-content-around">
-                    <a href="{{ url('/admin/PortfolioImage/edit') . '/' . $portfolio->id . '/' . $dat['id'] }}"><img src="{{ asset('assets/Images/Icon/edit.png') }}" width="30" alt="edit"></a>
-                    <a href="{{ url('/admin/PortfolioImage/delete') . '/' . $portfolio->id . '/' . $dat['id'] }}"><img src="{{ asset('assets/Images/Icon/delete.png') }}" width="30" alt="delete"></a>
-                </td>
-            </tr>
-            @endforeach
+            <tbody>
+                @foreach($data as $dat)
+                @php
+                    $i++;
+                @endphp
+                <tr>
+                    <td class="text-center">{{ $i }}</td>
+                    <td><img src="{{ asset('storage/Images/Portfolio') . '/' . $portfolio->name . '/' . $dat['image_path'] }}" alt="" width="250" height="100%"></td>
+                    <td class="d-flex justify-content-around">
+                        <a href="{{ url('/admin/PortfolioImage/edit') . '/' . $portfolio->id . '/' . $dat['id'] }}"><img src="{{ asset('assets/Images/Icon/edit.png') }}" width="30" alt="edit"></a>
+                        <a href="{{ url('/admin/PortfolioImage/delete') . '/' . $portfolio->id . '/' . $dat['id'] }}"><img src="{{ asset('assets/Images/Icon/delete.png') }}" width="30" alt="delete"></a>
+                    </td>
+                </tr>
+                @endforeach
+            </tbody>
         </table>
     </div>
 </div>
 
+@endsection
+
+@section('custom-js')
+<script>
+    $(document).ready(function() {
+        $('#table').DataTable();
+    });
+</script>
 @endsection

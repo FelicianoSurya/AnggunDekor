@@ -16,96 +16,101 @@
                         <p class="m-0 text-design poppins-semibold">Our Service</p>
                     </div>
                     <div class="row w-100">
-                        <div class="col-4 py-2">
+                        <div class="col py-2">
                             <div class="box-service d-flex flex-column align-items-center justify-content-center">
                                 <img class="image-service" src="{{ asset('assets/Images/Icon/interior.png') }}" alt="interior">
                                 <p class="m-0 mt-3 text">Gorden</p>
                             </div>
                         </div>
-                        <div class="col-4 py-2">
+                        <div class="col py-2">
                             <div class="box-service d-flex flex-column align-items-center justify-content-center">
                                 <img class="image-service" src="{{ asset('assets/Images/Icon/bedroom.png') }}" alt="bed">
-                                <p class="m-0 mt-3 text">RollerBlind</p>
+                                <p class="m-0 mt-3 text">Wallpaper</p>
                             </div>
                         </div>
-                        <div class="col-4 py-2">
+                        <div class="col py-2">
                             <div class="box-service d-flex flex-column align-items-center justify-content-center">
                                 <img class="image-service" src="{{ asset('assets/Images/Icon/table.png') }}" alt="table">
-                                <p class="m-0 mt-3 text">Zebra Blind</p>
-                            </div>
-                        </div>
-                        <div class="col-4 py-2">
-                            <div class="box-service d-flex flex-column align-items-center justify-content-center">
-                                <img class="image-service" src="{{ asset('assets/Images/Icon/wallpaper.png') }}" alt="wallpaper">
-                                <p class="m-0 mt-3 text">WallPaper</p>
-                            </div>
-                        </div>
-                        <div class="col-4 py-2">
-                            <div class="box-service d-flex flex-column align-items-center justify-content-center">
-                                <img class="image-service" src="{{ asset('assets/Images/Icon/interior.png') }}" alt="interior">
-                                <p class="m-0 mt-3 text">WallPanel</p>
-                            </div>
-                        </div>
-                        <div class="col-4 py-2">
-                            <div class="box-service d-flex flex-column align-items-center justify-content-center">
-                                <img class="image-service" src="{{ asset('assets/Images/Icon/bedroom.png') }}" alt="interior">
-                                <p class="m-0 mt-3 text">Insect Screen</p>
-                            </div>
-                        </div>
-                        <div class="col-4 py-2">
-                            <div class="box-service d-flex flex-column align-items-center justify-content-center">
-                                <img class="image-service" src="{{ asset('assets/Images/Icon/table.png') }}" alt="interior">
                                 <p class="m-0 mt-3 text">Carpet</p>
                             </div>
                         </div>
-                        <div class="col-4 py-2">
+                        <div class="col py-2">
                             <div class="box-service d-flex flex-column align-items-center justify-content-center">
-                                <img class="image-service" src="{{ asset('assets/Images/Icon/wallpaper.png') }}" alt="interior">
-                                <p class="m-0 mt-3 text">Carpet Tile</p>
+                                <img class="image-service" src="{{ asset('assets/Images/Icon/wallpaper.png') }}" alt="wallpaper">
+                                <p class="m-0 mt-3 text">Sofa</p>
                             </div>
                         </div>
-                        <div class="col-4 py-2">
+                        <div class="col py-2">
                             <div class="box-service d-flex flex-column align-items-center justify-content-center">
-                                <img class="image-service" src="{{ asset('assets/Images/Icon/wallpaper.png') }}" alt="interior">
+                                <img class="image-service" src="{{ asset('assets/Images/Icon/interior.png') }}" alt="interior">
+                                <p class="m-0 mt-3 text">SPC Flooring</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row w-100">
+                        <div class="col py-2">
+                            <div class="box-service d-flex flex-column align-items-center justify-content-center">
+                                <img class="image-service" src="{{ asset('assets/Images/Icon/interior.png') }}" alt="interior">
+                                <p class="m-0 mt-3 text">Roller Blind</p>
+                            </div>
+                        </div>
+                        <div class="col py-2">
+                            <div class="box-service d-flex flex-column align-items-center justify-content-center">
+                                <img class="image-service" src="{{ asset('assets/Images/Icon/bedroom.png') }}" alt="bed">
+                                <p class="m-0 mt-3 text">Wallpanel</p>
+                            </div>
+                        </div>
+                        <div class="col py-2">
+                            <div class="box-service d-flex flex-column align-items-center justify-content-center">
+                                <img class="image-service" src="{{ asset('assets/Images/Icon/table.png') }}" alt="table">
+                                <p class="m-0 mt-3 text">Carpet tile</p>
+                            </div>
+                        </div>
+                        <div class="col py-2">
+                            <div class="box-service d-flex flex-column align-items-center justify-content-center">
+                                <img class="image-service" src="{{ asset('assets/Images/Icon/wallpaper.png') }}" alt="wallpaper">
+                                <p class="m-0 mt-3 text">Vekleed Sofa</p>
+                            </div>
+                        </div>
+                        <div class="col py-2">
+                            <div class="box-service d-flex flex-column align-items-center justify-content-center">
+                                <img class="image-service" src="{{ asset('assets/Images/Icon/interior.png') }}" alt="interior">
+                                <p class="m-0 mt-3 text">Vinyl Flooring</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row w-100">
+                        <div class="col py-2">
+                            <div class="box-service d-flex flex-column align-items-center justify-content-center">
+                                <img class="image-service" src="{{ asset('assets/Images/Icon/interior.png') }}" alt="interior">
+                                <p class="m-0 mt-3 text">Zebra Blind</p>
+                            </div>
+                        </div>
+                        <div class="col py-2">
+                            <div class="box-service d-flex flex-column align-items-center justify-content-center">
+                                <img class="image-service" src="{{ asset('assets/Images/Icon/bedroom.png') }}" alt="bed">
+                                <p class="m-0 mt-3 text">Insect Screen</p>
+                            </div>
+                        </div>
+                        <div class="col py-2">
+                            <div class="box-service d-flex flex-column align-items-center justify-content-center">
+                                <img class="image-service" src="{{ asset('assets/Images/Icon/table.png') }}" alt="table">
                                 <p class="m-0 mt-3 text">Carpet Customs</p>
                             </div>
                         </div>
-                        <div class="col-4 py-2">
+                        <div class="col py-2">
                             <div class="box-service d-flex flex-column align-items-center justify-content-center">
-                                <img class="image-service" src="{{ asset('assets/Images/Icon/table.png') }}" alt="interior">
-                                <p class="m-0 mt-3 text">SOFA</p>
+                                <img class="image-service" src="{{ asset('assets/Images/Icon/wallpaper.png') }}" alt="wallpaper">
+                                <p class="m-0 mt-3 text">Headboard</p>
                             </div>
                         </div>
-                        <div class="col-4 py-2">
+                        <div class="col py-2">
                             <div class="box-service d-flex flex-column align-items-center justify-content-center">
-                                <img class="image-service" src="{{ asset('assets/Images/Icon/wallpaper.png') }}" alt="interior">
-                                <p class="m-0 mt-3 text">BEKLEED SOFA</p>
+                                <img class="image-service" src="{{ asset('assets/Images/Icon/interior.png') }}" alt="interior">
+                                <p class="m-0 mt-3 text">Decking WPC</p>
                             </div>
                         </div>
-                        <div class="col-4 py-2">
-                            <div class="box-service d-flex flex-column align-items-center justify-content-center">
-                                <img class="image-service" src="{{ asset('assets/Images/Icon/wallpaper.png') }}" alt="interior">
-                                <p class="m-0 mt-3 text">HEADBAND</p>
-                            </div>
-                        </div>
-                        <div class="col-4 py-2">
-                            <div class="box-service d-flex flex-column align-items-center justify-content-center">
-                                <img class="image-service" src="{{ asset('assets/Images/Icon/table.png') }}" alt="interior">
-                                <p class="m-0 mt-3 text">SPC FLOORING</p>
-                            </div>
-                        </div>
-                        <div class="col-4 py-2">
-                            <div class="box-service d-flex flex-column align-items-center justify-content-center">
-                                <img class="image-service" src="{{ asset('assets/Images/Icon/wallpaper.png') }}" alt="interior">
-                                <p class="m-0 mt-3 text">VINYL FLOORING</p>
-                            </div>
-                        </div>
-                        <div class="col-4 py-2">
-                            <div class="box-service d-flex flex-column align-items-center justify-content-center">
-                                <img class="image-service" src="{{ asset('assets/Images/Icon/wallpaper.png') }}" alt="interior">
-                                <p class="m-0 mt-3 text">DECKING WPC</p>
-                            </div>
-                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -122,7 +127,7 @@
             </div>
             <div class="d-flex align-items-center w-50 ml-3">
                 <p class="m-0 mr-3 poppins" style="font-size:10px; width: 250px">Dapatkan Informasi yang lebih lengkap dan terkini dengan hubungi nomor yang ada.</p>
-                <button class="btn btn-danger btn-appointment px-4 py-2">Buat Janji</button>
+                <a href="https://wa.me/6281253202998" target="_blank"><button class="btn btn-danger btn-appointment px-4 py-2">Buat Janji</button></a>
             </div>
         </div>
     </div>

@@ -63,7 +63,7 @@ class UserController extends Controller
         $data = PortfolioImage::where('portfolio_id', $id)->get();
 
         return view('Page.detail-portfolio', [
-            'portfolio' => $data,
+            'portfolioImages' => $data,
             'data' => $portfolio,
             'productType' => ProductType::all(),
             'portfolio' => Portfolio::all()
