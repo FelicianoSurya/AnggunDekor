@@ -38,12 +38,7 @@
 @endsection
 
 @section('custom-js')
-<<<<<<< HEAD
 <script>
     AOS.init();
 </script>
 @endsection
-=======
-
-@endsection
->>>>>>> b9eee8d79a5de4c7db69a1a33fcadd5aff1dd251
