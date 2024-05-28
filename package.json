@@ -14,5 +14,8 @@
         "sass": "^1.77.0",
         "sass-loader": "^14.2.1",
         "vite": "^5.0.0"
+    },
+    "dependencies": {
+        "datatables.net-bs5": "^2.0.8"
     }
 }

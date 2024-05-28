@@ -8,7 +8,7 @@
 
 <div class="container w-100 d-flex flex-column align-items-center">
     <div class="d-flex flex-column align-items-center">
-        <p class="topic poppins-bold m-0">Tambah Portfolio Type</p>
+        <p class="topic poppins-bold m-0">Tambah Product</p>
     </div>
     <form method="POST" class="w-50" action="{{ url('/admin/products/add') }}" enctype="multipart/form-data">
         @csrf
@@ -76,8 +76,6 @@
 
 @section('custom-js')
 <script>
-    $(document).ready(function() {
-    $('[data-toggle="tooltip"]').tooltip();
     $('#content').summernote({
         height: 300, // Set the height of the editor
         placeholder: 'Enter your content here...', // Placeholder text
@@ -87,16 +85,7 @@
             ['fontsize', ['fontsize']],
             ['color', ['color']],
             ['para', ['ul', 'ol', 'paragraph']],
-            ['height', ['height']],
-        ],
-        callbacks: {
-            // You can add additional callbacks here if needed
-            // For example, to get the content of the editor on change
-            onChange: function(contents, $editable) {
-                // You can do something with the contents here
-            }
-        }
+        ]
     });
-});
 </script>
 @endsection

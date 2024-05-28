@@ -21,10 +21,10 @@
                         <hr class="w-25 hr-border m-0">
                         <p class="m-0 ml-3 text-design poppins-semibold" data-aos="fade-down">Design Interior</p>
                     </div>
-                    <div class="mt-5">
+                    <div class="mt-2">
                         <p class="company-name poppins-bold" data-aos="fade-down">Anggun Dekor</p>
                         <p class="poppins" data-aos="fade-down">Anggun Dekor menawarkan layanan lengkap dalam menciptakan ruang impian Anda, mulai dari desain dan pembuatan interior ruangan, pemasangan lantai vinyl, plafon kustom, hingga pengaplikasian wallpaper dan pembuatan furnitur sesuai pesanan.</p>
-                        <a href="/products" data-aos="fade-down"><button class="btn btn-lg btn-danger px-5 btn-product">Products</button></a>
+                        <a href="/products"><button class="btn btn-lg btn-danger px-5 btn-product">Products</button></a>
                     </div>
                 </div>
             </div>

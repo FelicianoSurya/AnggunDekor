@@ -10,7 +10,7 @@
     <div class="container content-3-box d-flex justify-content-center flex-column align-items-center">
         <p class="mt-5 text-topic m-0" data-aos="fade-up">{{ $data->name }}</p>
         <div class="row mt-2">
-            @foreach($portfolio as $dat)
+            @foreach($portfolioImages as $dat)
             <div class="col-3 p-1" data-aos="fade-right">
                 <img width="100%" class="popup-image" src="{{ asset('storage/Images/Portfolio') . '/' . $data->name . '/' . $dat['image_path'] }}" alt="rect-23" height="350">
             </div>
@@ -35,13 +35,13 @@
             <div class="d-flex align-items-center w-50 cons-left">
                 <img src="{{ asset('assets/Images/Services/wa.png') }}" alt="wa">
                 <div class="d-flex flex-column align-items-start justify-content-center pl-3">
-                    <p class="m opacity">Get a Free Consultation</p>
-                    <p class="m-0 opacity" style="font-size:30px">0888 - 8888 - 8888</p>
+                    <p class="m opacity">Dapatkan Gratis Konsultasi</p>
+                    <p class="m-0 opacity" style="font-size:30px">0812 - 5320 - 2998</p>
                 </div>
             </div>
             <div class="d-flex align-items-center w-50 ml-3">
-                <p class="m-0 mr-3 poppins" style="font-size:10px; width: 250px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, molestiae! Totam voluptatum.</p>
-                <button class="btn btn-danger btn-appointment px-4 py-2">Make Appointment</button>
+                <p class="m-0 mr-3 poppins" style="font-size:10px; width: 250px">Dapatkan Informasi yang lebih lengkap dan terkini dengan hubungi nomor yang ada.</p>
+                <a href="https://wa.me/6281253202998" target="_blank"><button class="btn btn-danger btn-appointment px-4 py-2">Buat Janji</button></a>
             </div>
         </div>
     </div>

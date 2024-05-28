@@ -151,7 +151,7 @@ class ProductController extends Controller
 
         Product::create([
             'name' => $request->name,
-            'description' => $request->description,
+            'description' => $request->input("description"),
             'type_id' => $request->type_id,
         ]);
 
@@ -179,7 +179,7 @@ class ProductController extends Controller
         if($request->description !== null){
             $data->fill([
                 'name' => $request->name,
-                'description' => $request->description,
+                'description' => $request->input("description"),
                 'type_id' => $request->type_id
             ]);
         }else{

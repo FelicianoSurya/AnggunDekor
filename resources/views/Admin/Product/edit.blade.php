@@ -46,7 +46,7 @@
             <label for="description" class="col-md-12 col-form-label poppins-bold">{{ __('Description') }}</label>
 
             <div class="col-md-12">
-                <textarea name="description" id="content" class="form-control"></textarea>
+                <textarea name="description" id="content" class="form-control">{{ $data->description }}</textarea>
             </div>
 
             @error('description')
