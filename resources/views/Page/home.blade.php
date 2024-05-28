@@ -23,7 +23,7 @@
                     </div>
                     <div class="mt-5">
                         <p class="company-name poppins-bold" data-aos="fade-down">Anggun Dekor</p>
-                        <p class="poppins" data-aos="fade-down">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora accusantium pariatur aliquam ut accusamus quis atque dolores, itaque in rem recusandae animi quas totam quaerat ab enim nulla delectus facere.</p>
+                        <p class="poppins" data-aos="fade-down">Anggun Dekor menawarkan layanan lengkap dalam menciptakan ruang impian Anda, mulai dari desain dan pembuatan interior ruangan, pemasangan lantai vinyl, plafon kustom, hingga pengaplikasian wallpaper dan pembuatan furnitur sesuai pesanan.</p>
                         <a href="/products" data-aos="fade-down"><button class="btn btn-lg btn-danger px-5 btn-product">Products</button></a>
                     </div>
                 </div>
@@ -54,19 +54,19 @@
                 <p class="m-0 ml-3 text-design poppins-semibold">Interior Ruangan</p>
             </div>
             <p class="content-2-topic poppins-semibold">Design Interior dengan Anggun Dekor</p>
-            <p class="mt-3 poppins">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt fugit voluptate aliquam facilis tempore sunt laborum id ad, debitis molestias animi incidunt laudantium excepturi ipsa, voluptatibus, quas minus dicta rem.</p>
+            <p class="mt-3 poppins">Jasa pembuatan Sofa Custom dengan harga menyesuaikan budget untuk kantor, rumah, apartment, cafe, hotel, lobby gedung dan kebutuhan lainnya.</p>
             <div class="mt-3 row w-100">
                 <div class="col-6">
-                    <img src="{{ asset('assets/Images/Home/interior-1.png') }}" alt="inter-1" class="w-100 px-0 py-1">    
+                    <img src="{{ asset('assets/Images/Home/interior-1.png') }}" alt="inter-1" class="w-100 px-0 py-1">
                 </div>
                 <div class="col-6">
-                    <img src="{{ asset('assets/Images/Home/interior-2.png') }}" alt="inter-2" class="w-100 px-0 py-1">    
+                    <img src="{{ asset('assets/Images/Home/interior-2.png') }}" alt="inter-2" class="w-100 px-0 py-1">
                 </div>
                 <div class="col-6">
-                    <img src="{{ asset('assets/Images/Home/interior-3.png') }}" alt="inter-3" class="w-100 px-0 py-1">    
+                    <img src="{{ asset('assets/Images/Home/interior-3.png') }}" alt="inter-3" class="w-100 px-0 py-1">
                 </div>
                 <div class="col-6">
-                    <img src="{{ asset('assets/Images/Home/interior-4.png') }}" alt="inter-4" class="w-100 px-0 py-1">    
+                    <img src="{{ asset('assets/Images/Home/interior-4.png') }}" alt="inter-4" class="w-100 px-0 py-1">
                 </div>
             </div>
         </div>
@@ -81,7 +81,7 @@
                 <a href="/products/floor"><div class="box-image-content-3">
                     <div class="absolute"></div>
                     <p class="absolute-text">{{ $product->name }}</p>
-                    <img src="{{ asset('storage/Images/ProductType') . '/' . $product['image_path'] }}" alt="inter-5" class="w-100" height="250"> 
+                    <img src="{{ asset('storage/Images/ProductType') . '/' . $product['image_path'] }}" alt="inter-5" class="w-100" height="350">
                 </div></a>
             </div>
             @endforeach
