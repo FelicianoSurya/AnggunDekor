@@ -12,7 +12,7 @@
         <div class="row mt-2">
             @foreach($portfolioImages as $dat)
             <div class="col-3 p-1" data-aos="fade-right">
-                <img width="100%" class="popup-image" src="{{ asset('storage/Images/Portfolio') . '/' . $data->name . '/' . $dat['image_path'] }}" alt="rect-23" height="350">
+                <img width="100%" class="popup-image" src="{{ asset('storage/Images/Portfolio') . '/' . $data->name . '/' . $dat['image_path'] }}" alt="rect-23" height="250">
             </div>
             @endforeach
         </div>
