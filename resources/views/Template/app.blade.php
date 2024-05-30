@@ -27,7 +27,9 @@
     </div></a>
     @include('template.header')
 
-    @yield('content')
+    <div class="content-container">
+        @yield('content')
+    </div>
     @include('template.footer')
 
 

@@ -17,7 +17,7 @@
                     <div class="bottom-absolute">
                         <p class="absolute-text">{{ $product->name }}</p>
                     </div>                   
-                    <img src="{{ asset('storage/Images/Product') . '/' . $product->name . '/' . $product->productImage->image_path }}" class="w-100" width="100%"> 
+                    <img src="{{ asset('storage/Images/Product') . '/' . $product->name . '/' . $product->productImage->image_path }}" class="w-100" width="100%" height="250"> 
                 </div></a>
             </div>
             @endforeach

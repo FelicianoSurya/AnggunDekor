@@ -7,16 +7,16 @@
 @section('content')
 <!-- Codenya disini -->
 <div class="content-3">
-    <div class="container content-3-box d-flex justify-content-center flex-column align-items-center">
+    <div class="container d-flex justify-content-center flex-column align-items-center px-5">
         <p class="mt-5 text-topic m-0" data-aos="fade-up">Our Product</p>
-        <div class="row mt-1 fade-in">
+        <div class="row mt-1 fade-in px-5">
             @foreach($productType as $type)
 
             <div class="col-6 p-3" data-aos="fade-right">
                 <a href="{{ url('/products') . '/' . $type['id'] }}"><div class="box-image-content-3">
                     <div class="absolute"></div>
                     <p class="absolute-text">{{ $type->name }}</p>
-                    <img src="{{ asset('storage/Images/ProductType') . '/' . $type['image_path'] }}" alt="image-1" class="w-100" height="250"> 
+                    <img src="{{ asset('storage/Images/ProductType') . '/' . $type['image_path'] }}" alt="image-1" class="w-100" height="300"> 
                 </div></a>
             </div>
 
