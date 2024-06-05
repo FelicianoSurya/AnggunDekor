@@ -19,12 +19,12 @@
                 <div class="content-banner d-flex flex-column align-items-start justify-content-center w-50">
                     <div class="d-flex justify-content-start align-items-center w-100 mb-5">
                         <hr class="w-25 hr-border m-0">
-                        <p class="m-0 ml-3 text-design poppins-semibold" data-aos="fade-down">Design Interior</p>
+                        <p class="m-0 ml-3 text-design poppins-semibold" data-aos="fade-down">Anggun Dekor</p>
                     </div>
                     <div class="mt-2">
-                        <p class="company-name poppins-bold" data-aos="fade-down">Anggun Dekor</p>
-                        <p class="poppins" data-aos="fade-down">Anggun Dekor menawarkan layanan lengkap dalam menciptakan ruang impian Anda, mulai dari desain dan pembuatan interior ruangan, pemasangan lantai vinyl, plafon kustom, hingga pengaplikasian wallpaper dan pembuatan furnitur sesuai pesanan.</p>
-                        <a href="/products"><button class="btn btn-lg btn-danger px-5 btn-product">Products</button></a>
+                        <p class="company-name poppins-bold" data-aos="fade-down">Interior Dekorasi</p>
+                        <p class="poppins" data-aos="fade-down">Anggun Dekor menghadirkan solusi lengkap untuk mewujudkan ruang impian Anda. Dari interior dekorasi siap pakai hingga pemasangan lantai vinyl, kami siap membantu Anda menciptakan rumah idaman Anda. Temukan perlengkapan rumah berkualitas tinggi dan layanan yang menginspirasi hanya di Anggun Dekor!</p>
+                        <a href="/products"><button class="btn btn-lg btn-danger px-5 btn-product">Produk</button></a>
                     </div>
                 </div>
             </div>
@@ -51,10 +51,10 @@
         <div class="d-flex flex-column w-100 ml-5" data-aos="fade-left">
             <div class="d-flex justify-content-start align-items-center w-100 mb-3">
                 <hr class="hr-border m-0">
-                <p class="m-0 ml-3 text-design poppins-semibold">Interior Ruangan</p>
+                <p class="m-0 ml-3 text-design poppins-semibold">Interior Dekorasi</p>
             </div>
-            <p class="content-2-topic poppins-semibold">Design Interior dengan Anggun Dekor</p>
-            <p class="mt-3 poppins">Jasa pembuatan Sofa Custom dengan harga menyesuaikan budget untuk kantor, rumah, apartment, cafe, hotel, lobby gedung dan kebutuhan lainnya.</p>
+            <p class="content-2-topic poppins-semibold">Interior Dekorasi dengan Anggun Dekor</p>
+            <p class="mt-3 poppins">Jasa pembuatan Sofa Custom dengan harga menyesuaikan budget dan ruangan untuk kantor, rumah, apartment, cafe, hotel, lobby gedung dan kebutuhan lainnya.</p>
             <div class="mt-3 row w-100">
                 <div class="col-6">
                     <img src="{{ asset('assets/Images/Home/interior-1.png') }}" alt="inter-1" class="w-100 px-0 py-1">

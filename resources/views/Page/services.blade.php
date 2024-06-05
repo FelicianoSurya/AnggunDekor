@@ -121,7 +121,7 @@
             <div class="d-flex align-items-center w-50 cons-left">
                 <img src="{{ asset('assets/Images/Services/wa.png') }}" alt="wa">
                 <div class="d-flex flex-column align-items-start justify-content-center pl-3">
-                    <p class="m opacity">Dapatkan Gratis Konsultasi</p>
+                    <p class="m opacity">Dapatkan Gratis Konsultasi dan Pengukuran</p>
                     <p class="m-0 opacity" style="font-size:30px">0812 - 5320 - 2998</p>
                 </div>
             </div>
@@ -132,11 +132,12 @@
         </div>
     </div>
 </div>
+<div class="c"></div>
 
 
 <div class="content-2" data-aos="fade-up">
     <div class="container d-flex flex-column align-items-center justify-content-center">
-        <p class="topic poppins-semibold mt-4"><span style="color:#E00000">Process</span> We Follow</p>
+        {{-- <p class="topic poppins-semibold mt-4"><span style="color:#E00000">Process</span> We Follow</p>
         <div class="d-flex justify-content-around align-items-center">
             <div class="circle-big d-flex flex-column align-items-center justify-content-center">
                 <div class="circle-small">
@@ -161,7 +162,7 @@
                 <p class="m-0 text-center poppins-bold">Best Results</p>
                 <p class="m-0 text-center poppins">Lorem askdan sadda dasdad</p>
             </div>
-        </div>
+        </div> --}}
     </div>
 </div>
 @endsection
