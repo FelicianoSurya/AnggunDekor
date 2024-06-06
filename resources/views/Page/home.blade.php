@@ -60,13 +60,13 @@
                     <img src="{{ asset('assets/Images/Home/interior-5.png') }}" alt="inter-1" widht="100%" height="160" class="w-100 px-0 py-1">
                 </div>
                 <div class="col-6">
-                    <img src="{{ asset('assets/Images/Home/interior-6.png') }}" alt="inter-2" widht="100%" height="160" class="w-100 px-0 py-1">
+                    <img src="{{ asset('assets/Images/Home/interior-6.jpeg') }}" alt="inter-2" widht="100%" height="160" class="w-100 px-0 py-1">
                 </div>
                 <div class="col-6">
                     <img src="{{ asset('assets/Images/Home/sofa-2.jpg') }}" alt="inter-3" widht="100%" height="160" class="w-100 px-0 py-1">
                 </div>
                 <div class="col-6">
-                    <img src="{{ asset('assets/Images/Home/interior-4.png') }}" alt="inter-4" widht="100%" height="160" class="w-100 px-0 py-1">
+                    <img src="{{ asset('assets/Images/Home/interior-4.jpeg') }}" alt="inter-4" widht="100%" height="160" class="w-100 px-0 py-1">
                 </div>
             </div>
         </div>
