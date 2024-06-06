@@ -12,6 +12,8 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- JQuery UI -->
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-NzVpx+FOmD2CG0LLr12RIjgz7a7hLZh3jgCETy6eIN6P3mCv5Ttxr0NxokzMV9i4jCW2giUl3ftjLC3NbP7Iwg==" crossorigin="anonymous" />
     <!-- Custom CSS Navigation Bar -->
     <link rel="stylesheet" href="{{ asset('assets/css/navbar.css') }}">
     <!-- Custom CSS Footer -->
@@ -53,7 +55,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
 
-
+  
     <!-- <script src="{{ asset('js/sweetalert/sweetalert.js') }}"></script> -->
 
     <!-- Custom JS Navigation Bar -->

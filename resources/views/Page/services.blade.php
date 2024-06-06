@@ -17,98 +17,98 @@
                     </div>
                     <div class="row w-100">
                         <div class="col py-2">
-                            <div class="box-service d-flex flex-column align-items-center justify-content-center">
+                            <a href="/products/2"><div class="box-service d-flex flex-column align-items-center justify-content-center">
                                 <img class="image-service" src="{{ asset('assets/Images/Icon/interior.png') }}" alt="interior">
                                 <p class="m-0 mt-3 text">Gorden</p>
-                            </div>
+                            </div></a>
                         </div>
                         <div class="col py-2">
-                            <div class="box-service d-flex flex-column align-items-center justify-content-center">
+                            <a><div class="box-service d-flex flex-column align-items-center justify-content-center">
                                 <img class="image-service" src="{{ asset('assets/Images/Icon/wallpaper.png') }}" alt="bed">
                                 <p class="m-0 mt-3 text">Wallpaper</p>
-                            </div>
+                            </div></a>
                         </div>
                         <div class="col py-2">
-                            <div class="box-service d-flex flex-column align-items-center justify-content-center">
+                            <a href="/products/8"><div class="box-service d-flex flex-column align-items-center justify-content-center">
                                 <img class="image-service" src="{{ asset('assets/Images/Icon/carpet.png') }}" alt="table">
                                 <p class="m-0 mt-3 text">Carpet</p>
-                            </div>
+                            </div></a>
                         </div>
                         <div class="col py-2">
-                            <div class="box-service d-flex flex-column align-items-center justify-content-center">
+                            <a href="/products/11"><div class="box-service d-flex flex-column align-items-center justify-content-center">
                                 <img class="image-service" src="{{ asset('assets/Images/Icon/sofa.png') }}" alt="wallpaper">
                                 <p class="m-0 mt-3 text">Sofa</p>
-                            </div>
+                            </div></a>
                         </div>
                         <div class="col py-2">
-                            <div class="box-service d-flex flex-column align-items-center justify-content-center">
+                            <a href="/products/13"><div class="box-service d-flex flex-column align-items-center justify-content-center">
                                 <img class="image-service" src="{{ asset('assets/Images/Icon/spc.png') }}" alt="interior">
                                 <p class="m-0 mt-3 text">SPC Flooring</p>
-                            </div>
+                            </div></a>
                         </div>
                     </div>
                     <div class="row w-100">
                         <div class="col py-2">
-                            <div class="box-service d-flex flex-column align-items-center justify-content-center">
+                            <a href="/products/7"><div class="box-service d-flex flex-column align-items-center justify-content-center">
                                 <img class="image-service" src="{{ asset('assets/Images/Icon/rollerblind.png') }}" alt="interior">
                                 <p class="m-0 mt-3 text">Roller Blind</p>
-                            </div>
+                            </div></a>
                         </div>
                         <div class="col py-2">
-                            <div class="box-service d-flex flex-column align-items-center justify-content-center">
+                            <a><div class="box-service d-flex flex-column align-items-center justify-content-center">
                                 <img class="image-service" src="{{ asset('assets/Images/Icon/wallpanel.png') }}" alt="bed">
                                 <p class="m-0 mt-3 text">Wallpanel</p>
-                            </div>
+                            </div></a>
                         </div>
                         <div class="col py-2">
-                            <div class="box-service d-flex flex-column align-items-center justify-content-center">
+                            <a href="/products/9"><div class="box-service d-flex flex-column align-items-center justify-content-center">
                                 <img class="image-service" src="{{ asset('assets/Images/Icon/carpettile.png') }}" alt="table">
                                 <p class="m-0 mt-3 text">Carpet tile</p>
-                            </div>
+                            </div></a>
                         </div>
                         <div class="col py-2">
-                            <div class="box-service d-flex flex-column align-items-center justify-content-center">
+                            <a href="/products/12"><div class="box-service d-flex flex-column align-items-center justify-content-center">
                                 <img class="image-service" src="{{ asset('assets/Images/Icon/bekleedsofa.png') }}" alt="wallpaper">
                                 <p class="m-0 mt-3 text">Bekleed Sofa</p>
-                            </div>
+                            </div></a>
                         </div>
                         <div class="col py-2">
-                            <div class="box-service d-flex flex-column align-items-center justify-content-center">
+                            <a href="/products/14"><div class="box-service d-flex flex-column align-items-center justify-content-center">
                                 <img class="image-service" src="{{ asset('assets/Images/Icon/vinyl.png') }}" alt="interior">
                                 <p class="m-0 mt-3 text">Vinyl Flooring</p>
-                            </div>
+                            </div></a>
                         </div>
                     </div>
                     <div class="row w-100">
                         <div class="col py-2">
-                            <div class="box-service d-flex flex-column align-items-center justify-content-center">
+                            <a href="/products/7"><div class="box-service d-flex flex-column align-items-center justify-content-center">
                                 <img class="image-service" src="{{ asset('assets/Images/Icon/zebrablind.png') }}" alt="interior">
                                 <p class="m-0 mt-3 text">Zebra Blind</p>
-                            </div>
+                            </div></a>
                         </div>
                         <div class="col py-2">
-                            <div class="box-service d-flex flex-column align-items-center justify-content-center">
+                            <a><div class="box-service d-flex flex-column align-items-center justify-content-center">
                                 <img class="image-service" src="{{ asset('assets/Images/Icon/insectscreen.png') }}" alt="bed">
                                 <p class="m-0 mt-3 text">Insect Screen</p>
-                            </div>
+                            </div></a>
                         </div>
                         <div class="col py-2">
-                            <div class="box-service d-flex flex-column align-items-center justify-content-center">
+                            <a href="/products/10"><div class="box-service d-flex flex-column align-items-center justify-content-center">
                                 <img class="image-service" src="{{ asset('assets/Images/Icon/carpetcustom.png') }}" alt="table">
                                 <p class="m-0 mt-3 text">Carpet Customs</p>
-                            </div>
+                            </div></a>
                         </div>
                         <div class="col py-2">
-                            <div class="box-service d-flex flex-column align-items-center justify-content-center">
+                            <a><div class="box-service d-flex flex-column align-items-center justify-content-center">
                                 <img class="image-service" src="{{ asset('assets/Images/Icon/headboard.png') }}" alt="wallpaper">
                                 <p class="m-0 mt-3 text">Headboard</p>
-                            </div>
+                            </div></a>
                         </div>
                         <div class="col py-2">
-                            <div class="box-service d-flex flex-column align-items-center justify-content-center">
+                            <a href="/products/15"><div class="box-service d-flex flex-column align-items-center justify-content-center">
                                 <img class="image-service" src="{{ asset('assets/Images/Icon/ceiling.png') }}" alt="interior">
                                 <p class="m-0 mt-3 text">Decking WPC</p>
-                            </div>
+                            </div></a>
                         </div>
                     </div>
                     </div>

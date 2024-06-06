@@ -8,7 +8,7 @@
 <!-- Codenya disini -->
 <div class="content-3">
     <div class="container content-3-box d-flex justify-content-center flex-column align-items-center">
-        <p class="mt-5 text-topic m-0"data-aos="fade-up">Product Detail</p>
+        <p class="mt-5 text-topic m-0"data-aos="fade-up">{{ $productTypeDetail->name }}</p>
         <div class="row mt-1 w-100">
             @foreach($products as $product)
             <div class="box col-3 p-2"data-aos="fade-down">

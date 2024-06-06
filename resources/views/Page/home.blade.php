@@ -47,7 +47,7 @@
 </div>
 <div class="container content-2 py-5 px-0">
     <div class="d-flex">
-        <img src="{{ asset('assets/Images/furniture/interior.png') }}" data-aos="fade-right" alt="interior">
+        <img src="{{ asset('assets/Images/Home/sofa-1.jpg') }}" width="100%" height="650" data-aos="fade-right" alt="interior">
         <div class="d-flex flex-column w-100 ml-5" data-aos="fade-left">
             <div class="d-flex justify-content-start align-items-center w-100 mb-3">
                 <hr class="hr-border m-0">
@@ -57,16 +57,16 @@
             <p class="mt-3 poppins">Jasa pembuatan Sofa Custom dengan harga menyesuaikan budget dan ruangan untuk kantor, rumah, apartment, cafe, hotel, lobby gedung dan kebutuhan lainnya.</p>
             <div class="mt-3 row w-100">
                 <div class="col-6">
-                    <img src="{{ asset('assets/Images/Home/interior-1.png') }}" alt="inter-1" class="w-100 px-0 py-1">
+                    <img src="{{ asset('assets/Images/Home/interior-5.png') }}" alt="inter-1" widht="100%" height="160" class="w-100 px-0 py-1">
                 </div>
                 <div class="col-6">
-                    <img src="{{ asset('assets/Images/Home/interior-2.png') }}" alt="inter-2" class="w-100 px-0 py-1">
+                    <img src="{{ asset('assets/Images/Home/interior-6.png') }}" alt="inter-2" widht="100%" height="160" class="w-100 px-0 py-1">
                 </div>
                 <div class="col-6">
-                    <img src="{{ asset('assets/Images/Home/interior-3.png') }}" alt="inter-3" class="w-100 px-0 py-1">
+                    <img src="{{ asset('assets/Images/Home/sofa-2.jpg') }}" alt="inter-3" widht="100%" height="160" class="w-100 px-0 py-1">
                 </div>
                 <div class="col-6">
-                    <img src="{{ asset('assets/Images/Home/interior-4.png') }}" alt="inter-4" class="w-100 px-0 py-1">
+                    <img src="{{ asset('assets/Images/Home/interior-4.png') }}" alt="inter-4" widht="100%" height="160" class="w-100 px-0 py-1">
                 </div>
             </div>
         </div>

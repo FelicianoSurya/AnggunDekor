@@ -12,14 +12,14 @@ use App\Models\ProductImage;
 class ProductController extends Controller
 {
     public function index() {
-        $data = Product::with('type')->paginate(10);
+        $data = Product::with('type')->paginate();
         return view('Admin.product', [
             'products' => $data
         ]);
     }
 
     public function productType() {
-        $data = productType::paginate(10);
+        $data = productType::paginate();
 
         return view('Admin.productType', [
             'data' => $data,
@@ -103,7 +103,7 @@ class ProductController extends Controller
         }
 
         $data->save();
-        return redirect('/admin/productType')->with(['info' => 'edit']);
+        return redirect('/admin/productType')->with(['status' => 'edit']);
     }
 
     public function destroy($id, Request $request){
@@ -190,7 +190,7 @@ class ProductController extends Controller
         }
 
         $data->save();
-        return redirect('/admin/products')->with(['info' => 'edit']);
+        return redirect('/admin/products')->with(['status' => 'edit']);
     }
 
     public function destroyProduct($id, Request $request){
@@ -281,7 +281,7 @@ class ProductController extends Controller
         ]);
 
         $data->save();
-        return redirect('/admin/products' . '/' . $request->product_id)->with(['info' => 'edit']);
+        return redirect('/admin/products' . '/' . $request->product_id)->with(['status' => 'edit']);
     }
 
     public function destroyImage($product_id, $id, Request $request){
@@ -318,6 +318,6 @@ class ProductController extends Controller
 
         $data->save();
 
-        return redirect('/admin/products' . '/' . $product_id)->with(['info' => 'edit']);
+        return redirect('/admin/products' . '/' . $product_id)->with(['status' => 'edit']);
     }
 }

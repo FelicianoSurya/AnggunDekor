@@ -29,6 +29,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="{{ asset('assets/js/sweetalert/sweetalert.js') }}"></script>
 
 
     <!-- Bootstrap & Popper -->

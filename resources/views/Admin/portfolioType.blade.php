@@ -41,3 +41,37 @@
 </div>
 
 @endsection
+
+@section('custom-js')
+<script>
+    @if($status = Session::get('success'))
+        $(document).ready(function() {
+            Swal.fire({
+            icon: 'success',
+            title: 'Success',
+            text: "Portfolio Type Berhasil Ditambahkan!", 
+        });
+    });
+    @elseif(session('status') == 'delete')
+        $(document).ready(function() {
+                Swal.fire({
+                icon: 'success',
+                title: 'Delete',
+                text: "Portfolio Type Berhasil Dihapus!", 
+            });
+        });
+    @endif
+    @if(session('status') == 'edit')
+    $(document).ready(function() {
+            Swal.fire({
+            icon: 'success',
+            title: 'Edit',
+            text: "Portfolio Type Berhasil Diedit!", 
+        });
+    });
+    @endif
+    $(document).ready(function() {
+        $('#table').DataTable();
+    });
+</script>
+@endsection

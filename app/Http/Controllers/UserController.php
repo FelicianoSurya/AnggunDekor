@@ -29,8 +29,10 @@ class UserController extends Controller
         $data = Product::where('type_id', $id)->with(['productImage' => function ($query) {
             $query->where('active_image', '=', 1);
         }])->get();
+        $productType = ProductType::where('id', $id)->first();
         return view('Page.sub-product', [
             'products' => $data,
+            'productTypeDetail' => $productType,
             'productType' => ProductType::all(),
             'portfolio' => Portfolio::all()
         ]);

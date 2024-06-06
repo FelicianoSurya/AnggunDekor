@@ -104,7 +104,7 @@ class PortfolioController extends Controller
         }
 
         $data->save();
-        return redirect('/admin/portfolioType')->with(['info' => 'edit']);
+        return redirect('/admin/portfolioType')->with(['status' => 'edit']);
     }
 
     public function destroy($id, Request $request){
@@ -208,7 +208,7 @@ class PortfolioController extends Controller
         }
 
         $data->save();
-        return redirect('/admin/portfolio')->with(['info' => 'edit']);
+        return redirect('/admin/portfolio')->with(['status' => 'edit']);
     }
 
     public function destroyPortfolio($id, Request $request){
@@ -299,7 +299,7 @@ class PortfolioController extends Controller
         ]);
 
         $data->save();
-        return redirect('/admin/portfolio/images' . '/' . $request->portfolio_id)->with(['info' => 'edit']);
+        return redirect('/admin/portfolio/images' . '/' . $request->portfolio_id)->with(['status' => 'edit']);
     }
 
     public function destroyImage($portfolio_id, $id, Request $request){
