@@ -1,6 +1,14 @@
 .slide-1{
     height: 100vh;
-    background-image: url(../Images/banner/banner.png);
+    background-image: url(../Images/banner/banner-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.slide-2{
+    height: 100vh;
+    background-image: url(../Images/banner/banner-3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;

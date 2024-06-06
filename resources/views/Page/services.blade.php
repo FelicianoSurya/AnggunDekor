@@ -23,7 +23,7 @@
                             </div></a>
                         </div>
                         <div class="col py-2">
-                            <a><div class="box-service d-flex flex-column align-items-center justify-content-center">
+                            <a href="/products/18"><div class="box-service d-flex flex-column align-items-center justify-content-center">
                                 <img class="image-service" src="{{ asset('assets/Images/Icon/wallpaper.png') }}" alt="bed">
                                 <p class="m-0 mt-3 text">Wallpaper</p>
                             </div></a>
@@ -49,13 +49,13 @@
                     </div>
                     <div class="row w-100">
                         <div class="col py-2">
-                            <a href="/products/7"><div class="box-service d-flex flex-column align-items-center justify-content-center">
+                            <a href="/products/6"><div class="box-service d-flex flex-column align-items-center justify-content-center">
                                 <img class="image-service" src="{{ asset('assets/Images/Icon/rollerblind.png') }}" alt="interior">
                                 <p class="m-0 mt-3 text">Roller Blind</p>
                             </div></a>
                         </div>
                         <div class="col py-2">
-                            <a><div class="box-service d-flex flex-column align-items-center justify-content-center">
+                            <a href="/products/19"><div class="box-service d-flex flex-column align-items-center justify-content-center">
                                 <img class="image-service" src="{{ asset('assets/Images/Icon/wallpanel.png') }}" alt="bed">
                                 <p class="m-0 mt-3 text">Wallpanel</p>
                             </div></a>
@@ -63,7 +63,7 @@
                         <div class="col py-2">
                             <a href="/products/9"><div class="box-service d-flex flex-column align-items-center justify-content-center">
                                 <img class="image-service" src="{{ asset('assets/Images/Icon/carpettile.png') }}" alt="table">
-                                <p class="m-0 mt-3 text">Carpet tile</p>
+                                <p class="m-0 mt-3 text">Carpet Tile</p>
                             </div></a>
                         </div>
                         <div class="col py-2">
@@ -87,7 +87,7 @@
                             </div></a>
                         </div>
                         <div class="col py-2">
-                            <a><div class="box-service d-flex flex-column align-items-center justify-content-center">
+                            <a href="/products/21"><div class="box-service d-flex flex-column align-items-center justify-content-center">
                                 <img class="image-service" src="{{ asset('assets/Images/Icon/insectscreen.png') }}" alt="bed">
                                 <p class="m-0 mt-3 text">Insect Screen</p>
                             </div></a>
@@ -99,7 +99,7 @@
                             </div></a>
                         </div>
                         <div class="col py-2">
-                            <a><div class="box-service d-flex flex-column align-items-center justify-content-center">
+                            <a href="/products/20"><div class="box-service d-flex flex-column align-items-center justify-content-center">
                                 <img class="image-service" src="{{ asset('assets/Images/Icon/headboard.png') }}" alt="wallpaper">
                                 <p class="m-0 mt-3 text">Headboard</p>
                             </div></a>
@@ -107,7 +107,7 @@
                         <div class="col py-2">
                             <a href="/products/15"><div class="box-service d-flex flex-column align-items-center justify-content-center">
                                 <img class="image-service" src="{{ asset('assets/Images/Icon/ceiling.png') }}" alt="interior">
-                                <p class="m-0 mt-3 text">Decking WPC</p>
+                                <p class="m-0 mt-3 text">WPC Decking</p>
                             </div></a>
                         </div>
                     </div>
