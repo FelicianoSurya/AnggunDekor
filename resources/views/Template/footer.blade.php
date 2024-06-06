@@ -9,19 +9,15 @@
             </ul>
         </div>
         <div>
-            <a href="/services"><p>Service</p></a>
-        </div>
-        <div>
-            <a href="/portfolio"><p>Portfolio</p></a>
-            <ul>
-                @foreach($portfolio as $portfolio)
-                <a href="{{ url('/portfolio') . '/' . $portfolio->id }}"><li>{{ $portfolio->name }}</li></a>
-                @endforeach
-            </ul>
-        </div>
-        <div>
             <p>Hubungi Kami</p>
-            <p>0812 - 5320 - 2998 (WA)</p>
+            <a target="_blank" href="https://wa.me/6281253202998"><div class="d-flex p-2">
+                <img src="{{ asset('assets/Images/Icon/whatsapp.png') }}" class="mr-2" width="30" alt="">
+                <p>0812 - 5320 - 2998</p>
+            </div></a>
+            <a target="_blank" href="https://www.instagram.com/anggundekor_bpn?igsh=MTMwMnNzNzV2OWx3cQ%3D%3D"><div class="d-flex p-2">
+                <img src="{{ asset('assets/Images/Icon/instagram.png') }}" class="mr-2" width="30" alt="">
+                <p>anggundekor_bpn</p>
+            </div></a>
         </div>
     </footer>
 </div>
