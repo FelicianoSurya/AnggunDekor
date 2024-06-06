@@ -25,7 +25,7 @@
 
 <body>
     <a class="whatsappIcon" href="https://wa.me/6281253202998" target="_blank"><div class="whatsapp">
-        <img src="{{ asset('assets/Images/Icon/whatsapp.png') }}" alt="png" width="40">
+        <img src="{{ asset('assets/Images/Icon/whatsapp.png') }}" alt="png" class="imageWhatsapp">
     </div></a>
     @include('template.header')
 

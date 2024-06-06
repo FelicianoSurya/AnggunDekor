@@ -64,6 +64,147 @@ a:hover{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+.imageWhatsapp{
+    width: 40px;
+}
+
 .whatsappIcon:hover{
     opacity: 0.8;
+}
+
+.burger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 24px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #f00000;
+    opacity: 1 !important;
+    transition: all 0.3s ease;
+    z-index: 10001;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidebar ul a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    display: block;
+}
+
+.sidebar ul a:hover {
+    background-color: #555;
+}
+
+.sidebar.open {
+    right:0;
+}
+
+.text-x{
+    position: absolute;
+    right:0 !important; 
+    top: 0 !important;
+}
+
+.closeSidebar{
+    width: 10%;
+    cursor: pointer;
+}
+
+.nomor{
+    font-size: 25px !important;
+}
+
+.konsultasi{
+    font-size: 15px !important;
+}
+
+@media screen and (max-width: 1600px) {
+    .nomor{
+        font-size: 20px !important;
+    }
+
+    .konsultasi{
+        font-size: 15px !important;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .nomor{
+        font-size: 20px !important;
+    }
+
+    .konsultasi{
+        font-size: 15px !important;
+    }
+
+    .cons-left{
+        border:none !important;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .consultation img{
+        width: 50px;
+    }
+
+    .nomor{
+        font-size: 15px !important;
+    }
+
+    .konsultasi{
+        font-size: 15px !important;
+    }
+    
+    .cons-left{
+        border:none !important;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .whatsappIcon{
+        bottom: 50px;
+        right: 10px;
+        background-color: #43c410;
+        padding:10px;
+        border-radius: 50px;
+        z-index: 1020;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    .cons-left{
+        border:none !important;
+    }
+
+    .imageWhatsapp{
+        width: 25px;
+    }
+
+    .logo-text{
+        font-size: 15px;
+    }
 }

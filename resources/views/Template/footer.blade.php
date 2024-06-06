@@ -1,15 +1,15 @@
 <div class="container-fluid p-0 footer">
-    <footer class="container d-flex justify-content-around align-items-start p-4">
+    <footer class="container d-flex flex-column flex-lg-row flex-md-row justify-content-around align-items-start p-4">
         <div>
-            <p>Products</p>
-            <ul>
+            <p class="footer-topic">Products</p>
+            <ul class="row">
                 @foreach($productType as $product)
-                <a href="{{ url('/products') . '/' . $product->id }}"><li>{{ $product->name }}</li></a>
+                <a class="col-6 col-lg-3 col-md-4" href="{{ url('/products') . '/' . $product->id }}"><li>{{ $product->name }}</li></a>
                 @endforeach
             </ul>
         </div>
         <div>
-            <p>Hubungi Kami</p>
+            <p class="footer-topic">Hubungi Kami</p>
             <a target="_blank" href="https://wa.me/6281253202998"><div class="d-flex p-2">
                 <img src="{{ asset('assets/Images/Icon/whatsapp.png') }}" class="mr-2" width="30" alt="">
                 <p>0812 - 5320 - 2998</p>
