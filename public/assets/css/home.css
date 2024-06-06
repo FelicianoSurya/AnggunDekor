@@ -34,6 +34,7 @@
 
 .content-banner{
     padding: 15em 10em 20em 15em;
+    width: 50%;
     z-index: 1000;
     position: relative;
 }
@@ -58,6 +59,10 @@
 .company-name{
     font-size: 3.5em;
     letter-spacing: 1px;
+}
+
+.text-desc{
+    font-size: 16px;
 }
 
 .btn-product{
@@ -89,4 +94,109 @@
 .box-image-content-3{
     position: relative;
     min-height: 200px;
+}
+
+
+@media screen and (max-width: 1800px) {
+    .content-banner{
+        padding: 10em 3em 20em 15em;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .content-banner{
+        padding: 10em 0 20em 15em;
+    }
+
+    .text-design{
+        font-size: 1.8em;
+    }
+
+    .text-desc{
+        font-size: 14px;
+    }
+
+    .company-name {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .content-banner{
+        padding: 5em 0 20em 10em;
+    }
+
+    .company-name{
+        font-size: 2em;
+    }
+
+    .text-desc{
+        font-size: 13px;
+    }
+
+    .text-design{
+        font-size: 1.5em;
+    }
+
+    .slide-1{
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .content-banner{
+        padding: 3em 8em 5em 10em;
+        width: 100%;
+    }
+
+    .company-name{
+        font-size: 2em;
+    }
+
+    .text-desc{
+        font-size: 13px;
+    }
+
+    .content-2 .text-design{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .content-banner{
+        padding: 5em 3em 5em 3em;
+        width: 100%;
+    }
+
+    .company-name{
+        font-size: 1.7em;
+    }
+
+    .text-desc{
+        font-size: 13px;
+    }
+
+    .text-design{
+        font-size: 1.5em;
+    }
+
+    .slide-1{
+        height: 65vh;
+    }
+
+    .carousel-control-prev-icon{
+        display: none;
+    }
+
+    .carousel-control-next-icon{
+        display: none;
+    }
+
+    .content-2 .text-design{
+        font-size: 15px;
+    }
+
+    .content-2-topic{
+        font-size: 25px;
+    }
 }

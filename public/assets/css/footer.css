@@ -14,6 +14,11 @@ footer p{
     color: white;
 }
 
+.footer-topic{
+    opacity: 1 !important;
+    font-weight: bold;
+}
+
 .footer a{
     color:white;
 }

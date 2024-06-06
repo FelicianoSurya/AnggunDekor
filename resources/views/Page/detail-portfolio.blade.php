@@ -11,7 +11,7 @@
         <p class="mt-5 text-topic m-0" data-aos="fade-up">{{ $data->name }}</p>
         <div class="row mt-2">
             @foreach($portfolioImages as $dat)
-            <div class="col-3 p-1" data-aos="fade-right">
+            <div class="col-12 col-md-6 col-lg-3 p-1" data-aos="fade-right">
                 <img width="100%" class="popup-image" src="{{ asset('storage/Images/Portfolio') . '/' . $data->name . '/' . $dat['image_path'] }}" alt="rect-23" height="250">
             </div>
             @endforeach

@@ -11,7 +11,7 @@
         <p class="mt-5 text-topic m-0"data-aos="fade-up">{{ $productTypeDetail->name }}</p>
         <div class="row mt-1 w-100">
             @foreach($products as $product)
-            <div class="box col-3 p-2"data-aos="fade-down">
+            <div class="box col-12 col-md-6 col-lg-3 p-2"data-aos="fade-down">
                 <a href="{{ url('/products') . '/' . $product->type_id . '/' . $product->id }}"><div class="box-image-content-3">
                     <div class="absolute"></div>
                     <div class="bottom-absolute">

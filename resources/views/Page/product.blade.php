@@ -7,12 +7,12 @@
 @section('content')
 <!-- Codenya disini -->
 <div class="content-3">
-    <div class="container d-flex justify-content-center flex-column align-items-center px-5">
+    <div class="container d-flex justify-content-center flex-column align-items-center px-1 px-lg-5 px-md-3">
         <p class="mt-5 text-topic m-0" data-aos="fade-up">Our Product</p>
-        <div class="row mt-1 fade-in px-5">
+        <div class="row mt-1 fade-in px-1 px-lg-5 px-md-3">
             @foreach($productType as $type)
 
-            <div class="col-6 p-3" data-aos="fade-right">
+            <div class="col-12 col-lg-6 col-md-6 p-3" data-aos="fade-right">
                 <a href="{{ url('/products') . '/' . $type['id'] }}"><div class="box-image-content-3">
                     <div class="absolute"></div>
                     <p class="absolute-text">{{ $type->name }}</p>
